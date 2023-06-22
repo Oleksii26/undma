@@ -122,7 +122,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--white-cl);
-  padding: 68px 366px 123px 366px;
+  padding: 68px 366px 253px 366px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero_title {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
