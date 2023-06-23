@@ -2,9 +2,14 @@
     color: var(--white-cl);
     background-color: var(--btn-cl);
     padding: 12px 20px;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
     border: none;
+
+    @include bpoint(mobile) {
+    font-size: 22px;
+
+    }
 }
