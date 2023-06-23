@@ -15,12 +15,34 @@
 </head>
 
 <body>
+
     <header>
-        <a href="/">
+        <a href="index.html">
             <img src="./img/logo.png" alt="logo" height="80">
         </a>
-        <div class="menu"></div>
+        <div class="container-menu">
+            <div class="burger"></div>
+        </div>
+        <div class="menu is-hidden">
+            <div class="menu_header">
+
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="logo" height="80">
+                </a>
+                <img class="menu_close" src="./img/close.png" alt="close">
+                <!-- <button class="menu_close" type="button">X</button> -->
+            </div>
+            <ul class="menu_list">
+                <li><a href="*">Відгуки</a></li>
+                <li><a href="*">Приклади робіт</a></li>
+                <li><a href="*">Як ми працюємо?</a></li>
+                <li><a href="*">Послуги</a></li>
+                <li><a href="*">Переваги</a></li>
+                <li><a href="*">Контакти</a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <section class="hero">
             <h1 class="hero_title">Українське національне агентство цифрового маркетингу повного циклу<br>
@@ -34,6 +56,7 @@
             </div>
         </section>
     </main>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
