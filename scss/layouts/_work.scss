@@ -1,24 +1,80 @@
 .work {
     color: var(--sacondary-cl-txt);
-    font-size: 72px;
+    font-size: 36px;
     // font-family: Gilroy;
     letter-spacing: 1.16px;
     padding: 50px 80px 200px 80px;
-    position: relative;
- 
-}
-.work h2 {
-    font-weight: 300;
 
-}
+    & h2 {
+        font-weight: 300;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+        @include bpoint(tablet) {
+            font-size: 64px;
+        }
+
+        @include bpoint(desktop) {
+            font-size: 72px;
+        }
+    }
+
+    & h2::after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--border-cl);
+        margin-left: 60px;
+    }
+
+    &_text-theses {
+        font-size: 36px;
+        // font-family: Gilroy;
+        letter-spacing: 1.08px;
+        margin-bottom: 10px;
+    }
+
+    &_text-cooperation {
+        font-size: 24px;
+        // font-family: Gilroy;
+        letter-spacing: 0.72px;
+        margin-bottom: 100px;
+    }
+
+    &_list {
+        display: flex;
+        // display: grid;
+        grid-column-gap: 10px;
+
+        &-title {
+            color: #0F0F0F;
+            font-size: 36px;
+            // font-family: Gilroy;
+            font-weight: 500;
+            letter-spacing: 1.08px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        &-text {
+            font-size: 18px;
+            font-family: Gilroy;
+            line-height: 23px;
+            letter-spacing: 0.54px;
+        }
+
+    }
+
+    &_list li {
+        border: 2px solid var(--border-cl);
+        width: 373px;
+        padding: 45px;
+
+    }
 
 
-.work h2::after {
-    position: absolute;
-    content: '';
-    height: 2px;
-    top: 150px;
-    width: 30%;
-    right: 150px;
-    background-color: rgba(0, 0, 0, 0.20);
 }

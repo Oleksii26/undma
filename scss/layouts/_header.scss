@@ -1,19 +1,26 @@
  header {
      background-color: var(--header-cl);
-     padding: 33px 80px;
+     padding: 17px 40px;
      display: flex;
      justify-content: space-between;
      align-items: center;
      position: relative;
-    //  width: 100vw;
+     max-width: 1930px;
      margin-left: auto;
      margin-right: auto;
+     font-size: 26px;
+
+     @include bpoint(tablet) {
+         padding: 33px 80px;
+
+     }
+
  }
 
  .container-menu {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     cursor: pointer;
 
  }
 
@@ -34,15 +41,16 @@
          bottom: 16px;
 
      }
-     &::after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: var(--white-cl);
-        left: 0;
-        top: 16px;
 
-    }
+     &::after {
+         position: absolute;
+         content: '';
+         display: block;
+         width: 100%;
+         height: 2px;
+         background-color: var(--white-cl);
+         left: 0;
+         top: 16px;
+
+     }
  }

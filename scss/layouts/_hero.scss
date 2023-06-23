@@ -6,19 +6,40 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--white-cl);
-    padding: 68px 366px 253px 366px;
+    padding: 17px 70px 60px 70px;
     margin-left: auto;
     margin-right: auto;
- 
+
+    @include bpoint(tablet) {
+        padding: 34px 170px 126px 170px;
+
+    }
+
+    @include bpoint(desktop) {
+
+        padding: 68px 366px 253px 366px;
+
+    }
+
     &_title {
         // text-align: center;
         text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        font-size: 50px;
+        font-size: 26px;
         // font-family: Gilroy;
         font-weight: 300;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         width: 100%;
+
+        @include bpoint(tablet) {
+            font-size: 30px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 50px;
+
+        }
     }
 
     &_number-one {
@@ -32,29 +53,53 @@
         line-height: 30px;
         letter-spacing: 0.36px;
         margin-bottom: 37px;
+
     }
 
     &_tagline {
-        font-size: 32px;
+        font-size: 20px;
         // font-family: Gilroy;
         font-weight: 300;
         line-height: 30px;
         letter-spacing: 0.96px;
         margin-bottom: 60px;
 
+        @include bpoint(tablet) {
+            font-size: 26px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 32px;
+
+        }
     }
 
     &_btn {
-        margin-left: 27px;
+        // margin-left: 27px;
         background-color: rgba(0, 0, 0, 0);
         border: none;
         outline: 1px solid yellow;
         color: var(--white-cl);
-        font-size: 22px;
+        font-size: 12px;
         // font-family: Gilroy;
         font-weight: 500;
         line-height: 24px;
         text-transform: uppercase;
-        padding: 12px 20px;
+        padding: 12px 24px;
+        cursor: pointer;
+        margin-top: 30px;
+
+
+        @include bpoint(tablet) {
+            padding: 12px 28px;
+            margin-left: 10px;
+        }
+
+        @include bpoint(desktop) {
+            font-size: 22px;
+            margin-left: 27px;
+        }
     }
+
 }
