@@ -83,6 +83,10 @@ img {
   }
 }
 
+.link {
+  color: var(--btn-cl);
+}
+
 .logo {
   height: 40px;
 }
@@ -904,4 +908,36 @@ header {
 .gratitude_telegramm {
   text-align: center;
   margin-bottom: 66px;
+}
+
+.blog {
+  padding: 73px 80px 0 80px;
+}
+.blog_title {
+  color: var(--header-cl);
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 2.16px;
+  margin-top: 62px;
+  margin-bottom: 50px;
+}
+.blog_text {
+  margin-top: 73px;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  margin-bottom: 37px;
+}
+.blog_list {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: 0.72px;
+}
+.blog_list li {
+  margin-bottom: 15px;
+}
+.blog_sub-title {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
