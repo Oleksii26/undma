@@ -1,0 +1,91 @@
+.order {
+    padding: 100px 228px 215px 228px;
+
+
+    &_title {
+        color: var(--header-cl);
+        text-align: center;
+        font-size: 72px;
+        // font-family: Gilroy;
+        letter-spacing: 2.16px;
+        margin-bottom: 20px;
+    }
+
+    &_sub-title {
+        color: var(--header-cl);
+        font-size: 36px;
+        // font-family: Gilroy;
+        font-weight: 300;
+        letter-spacing: 1.08px;
+        margin-bottom: 88px;
+    }
+
+    &_form {
+        font-size: 24px;
+        // font-family: Gilroy;
+        font-weight: 300;
+        letter-spacing: 0.72px;
+    }
+
+    // &_lable {}
+
+    &_input {
+        display: block;
+        height: 60px;
+        width: 360px;
+
+        &::placeholder {
+            padding-left: 40px;
+
+        }
+    }
+
+    &_star {
+        color: var(--btn-cl);
+    }
+
+    &_container {
+        margin-bottom: 54px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_sub-container {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    &_textarea {
+        width: 99.5%;
+        display: block;
+        margin-bottom: 53px;
+    }
+
+    &_button {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &_confirmation {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        margin-bottom: 106px;
+    }
+
+    &_polotic {
+        font-size: 24px;
+        // font-family: Gilroy;
+        font-weight: 300;
+        letter-spacing: 0.72px;
+    }
+
+    &_link {
+        color: var(--btn-cl);
+        text-decoration: underline;
+    }
+}

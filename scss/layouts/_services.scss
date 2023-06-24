@@ -1,0 +1,31 @@
+.services {
+    padding: 100px 80px 200px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_title {
+        color: var(--header-cl);
+        text-align: center;
+        font-size: 72px;
+        // font-family: Gilroy;
+        letter-spacing: 2.16px;
+        margin-bottom: 100px;
+    }
+
+    &_list {
+        font-size: 36px;
+        // font-family: Gilroy;
+        font-weight: 500;
+        letter-spacing: 1.08px;
+        width: 100%;
+
+        & li:not(:last-child) {
+            border-bottom: 2px solid var(--border-cl);
+            padding-bottom: 50px;
+        }
+
+        // & li {}
+
+    }
+}
