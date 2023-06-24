@@ -1,0 +1,21 @@
+.hero-sacond {
+    padding: 109px 357px 145px 357px;
+    max-width: 1930px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white-cl);
+    margin-left: auto;
+    margin-right: auto;
+
+    &_title {
+        margin-top: 31px;
+        color: var(--white-cl);
+        font-size: 50px;
+        // font-family: Gilroy;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}

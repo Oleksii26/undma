@@ -1,0 +1,25 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px 180px 80px;
+
+    &_title {
+        color: var(--sacondary-cl-txt);
+        font-size: 72px;
+        // font-family: Gilroy;
+        font-weight: 500;
+        letter-spacing: 2.16px;
+        margin-bottom: 50px;
+    }
+
+    &_list li{
+        font-size: 36px;
+        // font-family: Gilroy;
+        letter-spacing: 1.08px;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}

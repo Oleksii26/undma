@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="#F5F5F5"/>
+<g id="&#208;&#159;&#208;&#190;&#208;&#180;&#209;&#143;&#208;&#186;&#208;&#176;" clip-path="url(#clip0_10_122)">
+<rect width="1920" height="1553" transform="translate(-750 -734)" fill="white"/>
+<g id="Email" clip-path="url(#clip1_10_122)">
+<path id="Vector" d="M33.333 6.66669H6.66634C4.83301 6.66669 3.34967 8.16669 3.34967 10L3.33301 30C3.33301 31.8334 4.83301 33.3334 6.66634 33.3334H33.333C35.1663 33.3334 36.6663 31.8334 36.6663 30V10C36.6663 8.16669 35.1663 6.66669 33.333 6.66669ZM33.333 13.3334L19.9997 21.6667L6.66634 13.3334V10L19.9997 18.3334L33.333 10V13.3334Z" fill="#157FE1"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_10_122">
+<rect width="1920" height="1553" fill="white" transform="translate(-750 -734)"/>
+</clipPath>
+<clipPath id="clip1_10_122">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

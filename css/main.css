@@ -93,6 +93,7 @@ img {
 }
 
 .footer {
+  position: relative;
   background-color: var(--header-cl);
   padding: 36px 80px 59px 80px;
   border: 1px solid white;
@@ -145,6 +146,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.footer_phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(18, 14, 14);
 }
 
 header {
@@ -737,6 +744,26 @@ header {
   display: block;
   margin-bottom: 53px;
 }
+.order_textarea::-webkit-input-placeholder {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.order_textarea::-moz-placeholder {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.order_textarea:-ms-input-placeholder {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.order_textarea::-ms-input-placeholder {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.order_textarea::placeholder {
+  padding-top: 16px;
+  padding-left: 40px;
+}
 .order_button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,7 +782,7 @@ header {
   display: flex;
   margin-bottom: 106px;
 }
-.order_polotic {
+.order_politic {
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0.72px;
@@ -763,4 +790,118 @@ header {
 .order_link {
   color: var(--btn-cl);
   text-decoration: underline;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 80px 180px 80px;
+}
+.contacts_title {
+  color: var(--sacondary-cl-txt);
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 2.16px;
+  margin-bottom: 50px;
+}
+.contacts_list li {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+.contacts_list li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.hero-sacond {
+  padding: 109px 357px 145px 357px;
+  max-width: 1930px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white-cl);
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-sacond_title {
+  margin-top: 31px;
+  color: var(--white-cl);
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.politic {
+  padding: 200px 80px 150px 80px;
+}
+.politic_title {
+  color: var(--header-cl);
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 2.16px;
+  margin-bottom: 23px;
+}
+.politic_sub-title {
+  margin-bottom: 60px;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+.politic_text {
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: 0.72px;
+  margin-bottom: 50px;
+}
+
+.gratitude {
+  padding: 80px 80px 215px 80px;
+}
+.gratitude_block {
+  text-align: center;
+}
+.gratitude_title {
+  color: var(--header-cl);
+  text-align: center;
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 2.16px;
+  margin-top: 77px;
+  margin-bottom: 50px;
+}
+.gratitude_text {
+  text-align: center;
+  margin-bottom: 54px;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+.gratitude_img {
+  display: inline-block;
+}
+.gratitude_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gratitude_list {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 1.08px;
+  margin-bottom: 62px;
+}
+.gratitude_telegramm {
+  text-align: center;
+  margin-bottom: 66px;
 }/*# sourceMappingURL=main.css.map */

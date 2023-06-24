@@ -61,6 +61,11 @@
         width: 99.5%;
         display: block;
         margin-bottom: 53px;
+
+        &::placeholder {
+            padding-top: 16px;
+            padding-left: 40px;
+        }
     }
 
     &_button {
@@ -77,7 +82,7 @@
         margin-bottom: 106px;
     }
 
-    &_polotic {
+    &_politic {
         font-size: 24px;
         // font-family: Gilroy;
         font-weight: 300;
