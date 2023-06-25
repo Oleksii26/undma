@@ -1,6 +1,4 @@
 .gratitude {
-    padding: 80px 80px 215px 80px;
-
     &_block {
         text-align: center;
 
@@ -9,20 +7,26 @@
     &_title {
         color: var(--header-cl);
         text-align: center;
-        font-size: 72px;
-        // font-family: Gilroy;
         font-weight: 500;
-        letter-spacing: 2.16px;
         margin-top: 77px;
         margin-bottom: 50px;
     }
 
     &_text {
         text-align: center;
-        margin-bottom: 54px;
-        font-size: 36px;
-        // font-family: Gilroy;
+        margin-bottom: 36px;
         letter-spacing: 1.08px;
+
+        @include bpoint(tablet) {
+            margin-bottom: 29px;
+            margin-bottom: 45px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 36px;
+            margin-bottom: 54px;
+        }
     }
 
     &_img {
@@ -36,11 +40,26 @@
     &_list {
         margin-left: auto;
         margin-right: auto;
-        font-size: 36px;
-        // font-family: Gilroy;
+        font-size: 24px;
         line-height: 60px;
         letter-spacing: 1.08px;
-        margin-bottom: 62px;
+        margin-bottom: 40px;
+
+        @include bpoint(tablet) {
+            font-size: 29px;
+            margin-bottom: 50px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 36px;
+            margin-bottom: 62px;
+
+        }
+
+        & li {display: flex;
+        align-items: center;
+        }
     }
 
     &_telegramm {

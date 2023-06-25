@@ -54,7 +54,6 @@ body {
   color: var(--accent-cl-txt);
   font-weight: 300;
   font-size: 24px;
-  line-height: 35px;
   letter-spacing: 0.72px;
 }
 
@@ -88,6 +87,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 .no-scroll {
@@ -131,8 +135,9 @@ img {
 
 .title {
   color: var(--header-cl);
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 2.16px;
+  font-weight: 300;
 }
 @media only screen and (min-width: 768px) {
   .title {
@@ -177,6 +182,7 @@ img {
   font-size: 14px;
   margin-right: 140px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .footer_address {
@@ -323,23 +329,12 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
   background-position: center;
-  height: 700px;
+  height: 530px;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--white-cl);
-  padding: 44px 70px 60px 70px;
   margin-left: auto;
   margin-right: auto;
-}
-@media only screen and (min-width: 768px) {
-  .hero {
-    padding: 55px 170px 126px 170px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .hero {
-    padding: 68px 366px 253px 366px;
-  }
 }
 .hero_title {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -367,18 +362,24 @@ header {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.36px;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero_text {
+    margin-bottom: 37px;
+  }
 }
 .hero_tagline {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.96px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
   .hero_tagline {
     font-size: 26px;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -489,11 +490,11 @@ header {
 }
 .menu_list li:not(:last-child) {
   font-weight: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
   .menu_list li:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 .menu_close {
@@ -527,11 +528,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .work h2 {
     font-size: 57px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -566,16 +568,19 @@ header {
 .work_text-cooperation {
   font-size: 15px;
   letter-spacing: 0.72px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 @media only screen and (min-width: 768px) {
   .work_text-cooperation {
     font-size: 19px;
+    margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .work_text-cooperation {
     font-size: 24px;
+    margin-bottom: 100px;
   }
 }
 .work_list {
@@ -589,25 +594,48 @@ header {
 }
 .work_list-title {
   color: #0F0F0F;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 1.08px;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .work_list-title {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
 }
 .work_list-text {
   text-align: justify;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 23px;
   letter-spacing: 0.54px;
 }
+@media only screen and (min-width: 768px) {
+  .work_list-text {
+    font-size: 23px;
+  }
+}
 .work_list li {
   border: 2px solid var(--border-cl);
-  width: 320px;
-  padding: 45px;
+  max-width: 300px;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .work_list li {
+    padding: 45px;
+  }
 }
 .work_list li:not(:last-child) {
   margin-bottom: 30px;
+}
+.work_list img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio {
@@ -624,11 +652,12 @@ header {
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.72px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_sub-title {
     font-size: 20px;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -646,7 +675,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
-  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -654,13 +682,19 @@ header {
 .portfolio_btn {
   color: var(--white-cl);
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
   padding: 12px 20px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--white-cl);
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio_btn {
+    font-size: 18px;
+  }
 }
 .portfolio_list-img {
   display: -webkit-box;
@@ -669,7 +703,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 87px;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio_list-img {
+    margin-bottom: 87px;
+  }
 }
 .portfolio_list-img-title {
   color: var(--white-cl);
@@ -711,6 +750,7 @@ header {
   font-size: 23px;
   color: var(--sacondary-cl-txt);
   letter-spacing: 1.08px;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .cooperation_title {
@@ -727,16 +767,19 @@ header {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.72px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  text-align: justify;
 }
 @media only screen and (min-width: 768px) {
   .cooperation_text {
     font-size: 19px;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .cooperation_text {
     font-size: 24px;
+    margin-bottom: 100px;
   }
 }
 .cooperation_list {
@@ -787,7 +830,12 @@ header {
 }
 .services_title {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .services_title {
+    margin-bottom: 65px;
+  }
 }
 .services_list {
   font-size: 24px;
@@ -840,6 +888,7 @@ header {
   color: var(--white-cl);
   text-align: center;
   margin-bottom: 20px;
+  font-size: 34px;
 }
 .advantages_text {
   text-align: center;
@@ -860,7 +909,7 @@ header {
 .advantages_list {
   width: 100%;
 }
-.advantages_list li {
+.advantages_list li:not(:last-child) {
   border-bottom: 1px solid var(--white-cl);
   padding-bottom: 30px;
 }
@@ -886,7 +935,17 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews_list {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews_list {
+    margin-bottom: 90px;
+  }
 }
 .reviews_list li {
   text-align: left;
@@ -900,10 +959,15 @@ header {
 }
 .reviews_name {
   color: var(--sacondary-cl-text);
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: 1.08px;
   margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews_name {
+    font-size: 36px;
+  }
 }
 .reviews video {
   width: 100%;
@@ -915,24 +979,28 @@ header {
 }
 .order_sub-title {
   color: var(--header-cl);
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 1.08px;
-  margin-bottom: 88px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .order_sub-title {
     font-size: 29px;
+    margin-bottom: 60px;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1280px) {
   .order_sub-title {
     font-size: 36px;
+    margin-bottom: 88px;
   }
 }
 .order_input {
   display: block;
   height: 60px;
-  width: 360px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .order_input::-webkit-input-placeholder {
@@ -954,7 +1022,7 @@ header {
   color: var(--btn-cl);
 }
 .order_container {
-  margin-bottom: 54px;
+  margin-bottom: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,6 +1031,16 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .order_container {
+    margin-bottom: 43px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .order_container {
+    margin-bottom: 54px;
+  }
 }
 .order_sub-container {
   display: -webkit-box;
@@ -976,7 +1054,17 @@ header {
 .order_textarea {
   width: 99.5%;
   display: block;
-  margin-bottom: 53px;
+  margin-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .order_textarea {
+    margin-bottom: 43px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .order_textarea {
+    margin-bottom: 53px;
+  }
 }
 .order_textarea::-webkit-input-placeholder {
   padding-top: 16px;
@@ -1014,7 +1102,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 106px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .order_confirmation {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .order_confirmation {
+    margin-bottom: 106px;
+  }
 }
 .order_politic {
   font-size: 12px;
@@ -1023,36 +1124,69 @@ header {
   color: var(--btn-cl);
   text-decoration: underline;
 }
+.order_lable {
+  width: 100%;
+}
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 100px 80px 180px 80px;
+@media only screen and (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .contacts_title {
-  color: var(--sacondary-cl-txt);
-  font-size: 72px;
+  text-align: center;
   font-weight: 500;
-  letter-spacing: 2.16px;
   margin-bottom: 50px;
 }
+@media only screen and (min-width: 768px) {
+  .contacts_title {
+    margin-bottom: 40px;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts_title {
+    margin-bottom: 50px;
+  }
+}
 .contacts_list li {
-  font-size: 36px;
+  font-size: 24px;
   letter-spacing: 1.08px;
 }
+@media only screen and (min-width: 768px) {
+  .contacts_list li {
+    font-size: 29px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts_list li {
+    font-size: 36px;
+  }
+}
 .contacts_list li:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .contacts_list li:not(:last-child) {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts_list li:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero-sacond {
-  padding: 109px 357px 145px 357px;
   max-width: 1930px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
@@ -1066,56 +1200,100 @@ header {
 .hero-sacond_title {
   margin-top: 31px;
   color: var(--white-cl);
-  font-size: 50px;
-  font-weight: 300;
+  font-size: 28px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-
-.politic {
-  padding: 200px 80px 150px 80px;
+@media only screen and (min-width: 768px) {
+  .hero-sacond_title {
+    font-size: 40px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .hero-sacond_title {
+    font-size: 50px;
+  }
+}
+
 .politic_title {
   color: var(--header-cl);
-  font-size: 72px;
   font-weight: 500;
-  letter-spacing: 2.16px;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .politic_title {
+    margin-bottom: 19px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .politic_title {
+    margin-bottom: 23px;
+  }
 }
 .politic_sub-title {
-  margin-bottom: 60px;
-  font-size: 36px;
+  margin-bottom: 40px;
+  font-size: 24px;
   letter-spacing: 1.08px;
+}
+@media only screen and (min-width: 768px) {
+  .politic_sub-title {
+    margin-bottom: 48px;
+    font-size: 29px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .politic_sub-title {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
 }
 .politic_text {
   text-align: justify;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 35px;
-  letter-spacing: 0.72px;
-  margin-bottom: 50px;
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .politic_text {
+    margin-bottom: 40px;
+    font-size: 19px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .politic_text {
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
 }
 
-.gratitude {
-  padding: 80px 80px 215px 80px;
-}
 .gratitude_block {
   text-align: center;
 }
 .gratitude_title {
   color: var(--header-cl);
   text-align: center;
-  font-size: 72px;
   font-weight: 500;
-  letter-spacing: 2.16px;
   margin-top: 77px;
   margin-bottom: 50px;
 }
 .gratitude_text {
   text-align: center;
-  margin-bottom: 54px;
-  font-size: 36px;
+  margin-bottom: 36px;
   letter-spacing: 1.08px;
+}
+@media only screen and (min-width: 768px) {
+  .gratitude_text {
+    margin-bottom: 29px;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gratitude_text {
+    font-size: 36px;
+    margin-bottom: 54px;
+  }
 }
 .gratitude_img {
   display: inline-block;
@@ -1128,44 +1306,108 @@ header {
 .gratitude_list {
   margin-left: auto;
   margin-right: auto;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 60px;
   letter-spacing: 1.08px;
-  margin-bottom: 62px;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .gratitude_list {
+    font-size: 29px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gratitude_list {
+    font-size: 36px;
+    margin-bottom: 62px;
+  }
+}
+.gratitude_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .gratitude_telegramm {
   text-align: center;
   margin-bottom: 66px;
 }
 
-.blog {
-  padding: 73px 80px 0 80px;
-}
 .blog_title {
   color: var(--header-cl);
-  font-size: 72px;
   font-weight: 500;
-  letter-spacing: 2.16px;
-  margin-top: 62px;
-  margin-bottom: 50px;
+  margin-top: 36px;
+  margin-bottom: 29px;
+}
+@media only screen and (min-width: 768px) {
+  .blog_title {
+    margin-top: 45px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .blog_title {
+    margin-top: 62px;
+    margin-bottom: 50px;
+  }
 }
 .blog_text {
-  margin-top: 73px;
-  font-size: 24px;
-  letter-spacing: 0.72px;
-  margin-bottom: 37px;
+  text-align: justify;
+  margin-top: 30px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .blog_text {
+    margin-top: 58px;
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .blog_text {
+    margin-top: 73px;
+    font-size: 24px;
+    margin-bottom: 37px;
+  }
 }
 .blog_list {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 35px;
-  letter-spacing: 0.72px;
+  line-height: 25px;
+  text-align: justify;
+}
+@media only screen and (min-width: 768px) {
+  .blog_list {
+    font-size: 19px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .blog_list {
+    font-size: 24px;
+  }
 }
 .blog_list li {
   margin-bottom: 15px;
 }
 .blog_sub-title {
-  font-size: 36px;
+  font-size: 24px;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .blog_sub-title {
+    font-size: 29px;
+    margin-bottom: 42px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .blog_sub-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

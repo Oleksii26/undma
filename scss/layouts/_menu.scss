@@ -49,6 +49,7 @@
     }
 
     &_list {
+
         // display: flex;
         // flex-direction: column;
         // justify-content: space-around;
@@ -75,18 +76,14 @@
 
         & li:not(:last-child) {
             font-weight: 300px;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
 
-            @include bpoint(tablet) {
-                margin-bottom: 30px;
-
-
-            }
+            // @include bpoint(tablet) {
+            //     margin-bottom: 30px;
+            // }
 
             @include bpoint(desktop) {
-                // margin-bottom: 60px;
-
-
+                margin-bottom: 60px;
             }
         }
     }

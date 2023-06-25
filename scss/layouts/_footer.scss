@@ -17,7 +17,8 @@
         font-size: 14px;
         margin-right: 140px;
         line-height: 30px;
-
+        margin-bottom: 30px;
+        
         @include bpoint(tablet) {
             font-size: 18px;
         }

@@ -14,7 +14,15 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
+
+        @include bpoint(tablet) {
+            margin-bottom: 70px;
+        }
+
+        @include bpoint(desktop) {
+            margin-bottom: 90px;
+        }
     }
 
     &_list li {
@@ -31,10 +39,15 @@
 
     &_name {
         color: var(--sacondary-cl-text);
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
         letter-spacing: 1.08px;
         margin-bottom: 10px;
+
+        @include bpoint(tablet) {
+            font-size: 36px;
+
+        }
     }
 
     & video {

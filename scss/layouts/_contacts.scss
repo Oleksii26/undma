@@ -1,25 +1,53 @@
 .contacts {
-    display: flex;
+
+    @include bpoint(tablet) {
+        display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 80px 180px 80px;
-
-    &_title {
-        color: var(--sacondary-cl-txt);
-        font-size: 72px;
-        // font-family: Gilroy;
-        font-weight: 500;
-        letter-spacing: 2.16px;
-        margin-bottom: 50px;
     }
 
-    &_list li{
-        font-size: 36px;
-        // font-family: Gilroy;
+    
+   
+
+    &_title {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 50px;
+
+        @include bpoint(tablet) {
+            margin-bottom: 40px;
+            text-align-last: left;
+        }
+
+        @include bpoint(desktop) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &_list li {
+        font-size: 24px;
         letter-spacing: 1.08px;
 
+        @include bpoint(tablet) {
+            font-size: 29px;
+        }
+
+        @include bpoint(desktop) {
+            font-size: 36px;
+        }
+
         &:not(:last-child) {
-            margin-bottom: 40px;
+            margin-bottom: 24px;
+
+            @include bpoint(tablet) {
+                font-size: 32px;
+            }
+
+            @include bpoint(desktop) {
+                margin-bottom: 40px;
+
+            }
+
         }
     }
 }

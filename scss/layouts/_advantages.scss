@@ -6,6 +6,8 @@
         color: var(--white-cl);
         text-align: center;
         margin-bottom: 20px;
+        font-size: 34px;
+
     }
 
     &_text {
@@ -25,11 +27,12 @@
 
     &_list {
         width: 100%;
-    }
 
-    &_list li {
-        border-bottom: 1px solid var(--white-cl);
+        & li:not(:last-child) {
+            border-bottom: 1px solid var(--white-cl);
         padding-bottom: 30px;
-
+        }
     }
+
+    
 }

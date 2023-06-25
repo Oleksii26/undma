@@ -1,30 +1,57 @@
 .blog {
-    padding: 73px 80px 0 80px;
 
     &_title {
         color: var(--header-cl);
-        font-size: 72px;
-        // font-family: Gilroy;
         font-weight: 500;
-        letter-spacing: 2.16px;
-        margin-top: 62px;
-        margin-bottom: 50px;
+        margin-top: 36px;
+        margin-bottom: 29px;
+
+        @include bpoint(tablet) {
+            margin-top: 45px;
+            margin-bottom: 36px;
+        }
+
+        @include bpoint(desktop) {
+            margin-top: 62px;
+            margin-bottom: 50px;
+        }
     }
 
     &_text {
-        margin-top: 73px;
-        font-size: 24px;
-        // font-family: Gilroy;
-        letter-spacing: 0.72px;
-        margin-bottom: 37px;
+        text-align: justify;
+        margin-top: 30px;
+        font-size: 16px;
+        margin-bottom: 24px;
+
+        @include bpoint(tablet) {
+            margin-top: 58px;
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        @include bpoint(desktop) {
+            margin-top: 73px;
+            font-size: 24px;
+            margin-bottom: 37px;
+        }
     }
 
     &_list {
-        font-size: 24px;
-        // font-family: Gilroy;
+        font-size: 14px;
         font-weight: 300;
-        line-height: 35px;
-        letter-spacing: 0.72px;
+        line-height: 25px;
+        text-align: justify;
+
+        @include bpoint(tablet) {
+            font-size: 19px;
+            line-height: 35px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 24px;
+
+        }
 
         & li {
             margin-bottom: 15px;
@@ -32,8 +59,20 @@
     }
 
     &_sub-title {
-        font-size: 36px;
+        font-size: 24px;
         letter-spacing: 1.08px;
-        margin-bottom: 50px;
+        margin-bottom: 36px;
+
+        @include bpoint(tablet) {
+            font-size: 29px;
+            margin-bottom: 42px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 36px;
+            margin-bottom: 50px;
+
+        }
     }
 }
