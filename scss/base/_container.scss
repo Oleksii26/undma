@@ -1,0 +1,10 @@
+.section {
+    padding: 30px 50px;
+
+    @include bpoint(tablet) {
+        padding: 40px 65px 160px 65px;
+    }
+    @include bpoint(tablet) {
+        padding: 50px 80px 200px 80px;
+    }
+}

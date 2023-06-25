@@ -10,10 +10,24 @@
     cursor: pointer;
 
     @include bpoint(desktop) {
-    font-size: 22px;
+        font-size: 22px;
     }
 }
 
 .link {
     color: var(--btn-cl);
+}
+
+.title {
+    color: var(--header-cl);
+    font-size: 45px;
+    letter-spacing: 2.16px;
+
+    @include bpoint(tablet) {
+        font-size: 57px;
+    }
+
+    @include bpoint(desktop) {
+        font-size: 72px;
+    }
 }

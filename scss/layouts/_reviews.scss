@@ -1,5 +1,4 @@
 .reviews {
-    padding: 200px 80px 116px 80px;
     background-color: var(--section-cl);
     text-align: center;
 
@@ -7,9 +6,6 @@
     &_title {
         color: var(--sacondary-cl-text);
         text-align: center;
-        font-size: 72px;
-        // font-family: Gilroy;
-        letter-spacing: 2.16px;
         margin-bottom: 100px;
     }
 
@@ -17,36 +13,31 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         margin-bottom: 90px;
     }
+
     &_list li {
         text-align: left;
+        width: 420px;
+        margin-bottom: 30px;
     }
 
     &_lang {
         color: var(--btn-cl);
-        font-size: 24px;
-        // font-family: Gilroy;
         font-weight: 500;
-        letter-spacing: 0.72px;
         margin-bottom: 10px;
     }
 
     &_name {
         color: var(--sacondary-cl-text);
         font-size: 36px;
-        // font-family: Gilroy;
         font-weight: 500;
         letter-spacing: 1.08px;
         margin-bottom: 10px;
     }
 
-    &_position {
-        font-size: 24px;
-        // font-family: Gilroy;
-        letter-spacing: 0.72px;
+    & video {
+        width: 100%;
     }
-
-   
-
 }

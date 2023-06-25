@@ -10,16 +10,16 @@
     color: var(--white-cl);
     text-align: center;
     font-size: 24px;
-    // font-family: Gilroy;
     font-weight: 300;
     letter-spacing: 1.44px;
     // transition: opacity var(--modal-anim), visibility var(--modal-anim);
     transition: 300ms linear;
 
     @include bpoint(tablet) {
-    font-size: 40px;
-        
+        font-size: 40px;
+
     }
+
     @include bpoint(desktop) {
         font-size: 48px;
 
@@ -34,54 +34,66 @@
         margin-bottom: 46px;
 
         @include bpoint(tablet) {
-        margin-bottom: 80px;
+            // margin-bottom: 80px;
 
             padding: 32px 80px 0 80px;
 
         }
+
         @include bpoint(desktop) {
-        margin-bottom: 104px;
+            // margin-bottom: 104px;
 
             padding: 32px 80px 0 80px;
 
         }
     }
 
-    &_list li:first-child {
-        letter-spacing: 1.8px;
-        font-size: 30px;
-        font-weight: 500;
-
-        @include bpoint(tablet) {
-        font-size: 44px;
-            
+    &_list {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-around;
+        // height: 100vh;
+        & li {
+            margin-bottom: 20px;
         }
-        @include bpoint(desktop) {
-            font-size: 60px;
 
-        }
-    }
+        & li:first-child {
+            letter-spacing: 1.8px;
+            font-size: 30px;
+            font-weight: 700;
 
-    &_list li:not(:last-child) {
-        margin-bottom: 15px;
+            @include bpoint(tablet) {
+                font-size: 44px;
 
-        @include bpoint(tablet) {
-            margin-bottom: 30px;
-
-                
             }
+
             @include bpoint(desktop) {
-                margin-bottom: 60px;
+                font-size: 60px;
 
-    
             }
+        }
+
+        & li:not(:last-child) {
+            font-weight: 300px;
+            margin-bottom: 15px;
+
+            @include bpoint(tablet) {
+                margin-bottom: 30px;
+
+
+            }
+
+            @include bpoint(desktop) {
+                // margin-bottom: 60px;
+
+
+            }
+        }
     }
 
     &_close {
         cursor: pointer;
     }
-
-
 }
 
 .is-hidden {

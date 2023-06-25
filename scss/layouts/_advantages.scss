@@ -1,31 +1,35 @@
 .advantages {
-    padding: 100px 80px 116px 80px;
     background-color: var(--sacondary-cl-txt);
     color: var(--white-cl);
 
-
     &_title {
+        color: var(--white-cl);
         text-align: center;
-        font-size: 72px;
-        // font-family: Gilroy;
-        letter-spacing: 2.16px;
+        margin-bottom: 20px;
     }
 
     &_text {
         text-align: center;
-        font-size: 36px;
-        // font-family: Gilroy;
-        font-weight: 300;
+        font-size: 19px;
         letter-spacing: 1.08px;
-        // margin-bottom: 107px;
+        margin-bottom: 30px;
+
+        @include bpoint(tablet) {
+            font-size: 24px;
+        }
+
+        @include bpoint(desktop) {
+            font-size: 30px;
+        }
     }
 
-&_list {
-    width: 100%;
-}
+    &_list {
+        width: 100%;
+    }
 
     &_list li {
-     border-bottom: 1px solid var(--white-cl);
-     padding-bottom: 30px;
+        border-bottom: 1px solid var(--white-cl);
+        padding-bottom: 30px;
+
     }
 }

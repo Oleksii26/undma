@@ -1,25 +1,36 @@
 .footer {
     position: relative;
     background-color: var(--header-cl);
-    padding: 36px 80px 59px 80px;
-    border: 1px solid white;
     color: var(--white-cl);
 
-    &_containert {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 123px;
+    &_container {
+        display: block;
+
+        @include bpoint(tablet) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 123px;
+        }
     }
 
     &_address {
-        font-size: 18px;
-        // font-family: Gilroy;
+        font-size: 14px;
         margin-right: 140px;
         line-height: 30px;
 
+        @include bpoint(tablet) {
+            font-size: 18px;
+        }
+
+
+
         &-link {
-            margin-bottom: 20px;
             display: block;
+
+            @include bpoint(tablet) {
+                margin-bottom: 20px;
+
+            }
         }
     }
 
@@ -31,7 +42,13 @@
     &_list {
         margin-top: 25px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        @include bpoint(tablet) {
+            justify-content: space-between;
+
+        }
 
         & li:not(:last-child) {
             margin-right: 20px;
@@ -49,11 +66,15 @@
 
     &_text {
         text-align: center;
-
+        letter-spacing: 0;
     }
 
     &_sub-container {
-        display: flex;
+
+        @include bpoint(tablet) {
+            display: flex;
+        }
+
     }
 
     &_phone {
@@ -61,5 +82,22 @@
         top: 50%;
         left: 50%;
         background-color: rgb(18, 14, 14);
+    }
+
+    &_logo {
+        display: none;
+
+        @include bpoint(tablet) {
+            display: block;
+        }
+    }
+
+    &_email {
+        display: flex;
+        justify-content: center;
+
+        @include bpoint(tablet) {
+            display: block;
+        }
     }
 }

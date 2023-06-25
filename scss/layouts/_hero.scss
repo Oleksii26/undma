@@ -6,12 +6,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--white-cl);
-    padding: 17px 70px 60px 70px;
+    padding: 44px 70px 60px 70px;
     margin-left: auto;
     margin-right: auto;
 
     @include bpoint(tablet) {
-        padding: 34px 170px 126px 170px;
+        padding: 55px 170px 126px 170px;
 
     }
 
@@ -26,7 +26,7 @@
         text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         font-size: 26px;
         // font-family: Gilroy;
-        font-weight: 300;
+        font-weight: 200;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         width: 100%;
@@ -76,13 +76,11 @@
     }
 
     &_btn {
-        // margin-left: 27px;
         background-color: rgba(0, 0, 0, 0);
         border: none;
         outline: 1px solid yellow;
         color: var(--white-cl);
         font-size: 12px;
-        // font-family: Gilroy;
         font-weight: 500;
         line-height: 24px;
         text-transform: uppercase;
@@ -99,6 +97,13 @@
         @include bpoint(desktop) {
             font-size: 22px;
             margin-left: 27px;
+        }
+    }
+    &_btn-container {
+        text-align: center;
+
+        @include bpoint(tablet) {
+            text-align: left;
         }
     }
 
