@@ -95,7 +95,7 @@
         }
 
         &-text {
-            text-align: justify;
+            // text-align: justify;
             font-size: 14px;
             line-height: 23px;
             letter-spacing: 0.54px;
@@ -103,16 +103,16 @@
             @include bpoint(tablet) {
                 font-size: 18px;
             }
-            @include bpoint(desktop) {
-                font-size: 23px;
-            }
+            // @include bpoint(desktop) {
+            //     font-size: 23px;
+            // }
         }
 
         & li {
             border: 2px solid var(--border-cl);
             max-width: 429px;
             padding: 20px;
-            height: 100%;
+            height: 429px;
 
             @include bpoint(tablet) {
                 padding: 45px;

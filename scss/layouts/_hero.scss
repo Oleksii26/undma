@@ -8,6 +8,16 @@
     color: var(--white-cl);
     margin-left: auto;
     margin-right: auto;
+    padding: 30px 50px;
+
+    @include bpoint(tablet) {
+        padding: 40px 65px 130px 65px;
+    
+    }
+
+    @include bpoint(desktop) {
+        padding: 60px 250px;
+    }
 
 
 
@@ -21,12 +31,10 @@
 
         @include bpoint(tablet) {
             font-size: 30px;
-
         }
 
         @include bpoint(desktop) {
             font-size: 50px;
-
         }
     }
 
