@@ -11,10 +11,11 @@
 
     &_list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        gap: 20px;
+        // margin-bottom: 30px;
 
         @include bpoint(tablet) {
             margin-bottom: 70px;
@@ -27,7 +28,7 @@
 
     &_list li {
         text-align: left;
-        width: 420px;
+       max-width: 420px;
         margin-bottom: 30px;
     }
 

@@ -2,11 +2,17 @@
     position: relative;
     background-color: var(--header-cl);
     color: var(--white-cl);
+    padding: 40px 80px 60px 80px;
 
     &_container {
         display: block;
 
         @include bpoint(tablet) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        @include bpoint(desktop) {
             display: flex;
             justify-content: space-between;
             margin-bottom: 123px;
@@ -15,12 +21,15 @@
 
     &_address {
         font-size: 14px;
-        margin-right: 140px;
         line-height: 30px;
         margin-bottom: 30px;
-        
+
         @include bpoint(tablet) {
             font-size: 18px;
+        }
+
+        @include bpoint(desktop) {
+            margin-right: 140px;
         }
 
 
@@ -70,9 +79,9 @@
         letter-spacing: 0;
     }
 
-    &_sub-container {
+     &_sub-container {
 
-        @include bpoint(tablet) {
+        @include bpoint(desktop) {
             display: flex;
         }
 

@@ -1,11 +1,16 @@
 .services {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    @include bpoint(desktop) {
+        justify-content: space-between;
+    }
 
     &_title {
         text-align: center;
         margin-bottom: 30px;
+
         @include bpoint(tablet) {
             margin-bottom: 65px;
 
@@ -21,13 +26,13 @@
 
         @include bpoint(tablet) {
             font-size: 30px;
-            margin-bottom: 80px;
+            // margin-bottom: 80px;
 
         }
 
         @include bpoint(desktop) {
             font-size: 36px;
-            margin-bottom: 100px;
+            // margin-bottom: 100px;
 
         }
 
@@ -48,10 +53,13 @@
     }
 
     &_img {
+        // max-width: 870px;
+
         display: none;
 
-        @include bpoint(tablet) {
-            width: 670px;
+        @include bpoint(desktop) {
+            max-width: 670px;
+
             display: block;
         }
     }

@@ -2,9 +2,9 @@
     padding: 30px 50px;
 
     @include bpoint(tablet) {
-        padding: 40px 65px 160px 65px;
+        padding: 40px 65px 130px 65px;
     }
-    @include bpoint(tablet) {
+    @include bpoint(desktop) {
         padding: 50px 80px 200px 80px;
     }
 }

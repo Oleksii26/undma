@@ -14,7 +14,7 @@
 
         @include bpoint(tablet) {
             font-size: 57px;
-        margin-bottom: 50px;
+            margin-bottom: 50px;
 
         }
 
@@ -69,8 +69,9 @@
     &_list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
-        grid-column-gap: 10px;
+        grid-column-gap: 30px;
 
         &-title {
             color: #0F0F0F;
@@ -83,9 +84,13 @@
 
             @include bpoint(tablet) {
                 text-align: left;
-                font-size: 36px;
+                font-size: 29px;
                 margin-bottom: 30px;
                 margin-top: 50px;
+            }
+
+            @include bpoint(desktop) {
+                font-size: 36px;
             }
         }
 
@@ -96,18 +101,22 @@
             letter-spacing: 0.54px;
 
             @include bpoint(tablet) {
+                font-size: 18px;
+            }
+            @include bpoint(desktop) {
                 font-size: 23px;
             }
         }
 
         & li {
             border: 2px solid var(--border-cl);
-            max-width: 300px;
+            max-width: 429px;
             padding: 20px;
+            height: 100%;
 
             @include bpoint(tablet) {
                 padding: 45px;
-
+                // width: 200px;
             }
         }
 

@@ -41,17 +41,16 @@
     &_list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 20px;
+   
 
         & li {
             border: 1px solid var(--border-cl);
-            width: 320px;
-            padding: 40px 35px 27px 35px;
-
-            &:not(:last-child) {
-                margin-bottom: 30px;
-            }
+            max-width: 400px;
+            height: 254px;
+            padding: 35px;
         }
     }
 
