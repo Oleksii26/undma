@@ -95,7 +95,6 @@
         }
 
         &-text {
-            // text-align: justify;
             font-size: 14px;
             line-height: 23px;
             letter-spacing: 0.54px;
@@ -103,10 +102,7 @@
             @include bpoint(tablet) {
                 font-size: 18px;
             }
-            // @include bpoint(desktop) {
-            //     font-size: 23px;
-            // }
-        }
+                    }
 
         & li {
             border: 2px solid var(--border-cl);
@@ -116,7 +112,6 @@
 
             @include bpoint(tablet) {
                 padding: 45px;
-                // width: 200px;
             }
         }
 

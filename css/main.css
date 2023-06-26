@@ -150,6 +150,63 @@ ol {
   }
 }
 
+.llh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: var(--btn-cl);
+}
+
+.llv {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 20px;
+  height: 1px;
+  background-color: var(--btn-cl);
+  rotate: 90deg;
+}
+
+.rlh {
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  width: 20px;
+  height: 1px;
+  background-color: var(--btn-cl);
+  rotate: 90deg;
+}
+
+.rlv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  background-color: var(--btn-cl);
+}
+
+.btn-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
 .logo {
   height: 40px;
 }
@@ -681,6 +738,7 @@ header {
 .portfolio_title {
   color: var(--white-cl);
   text-align: center;
+  margin-bottom: 10px;
 }
 .portfolio_sub-title {
   color: var(--white-cl);
@@ -813,7 +871,6 @@ header {
   font-weight: 300;
   letter-spacing: 0.72px;
   margin-bottom: 50px;
-  text-align: justify;
 }
 @media only screen and (min-width: 768px) {
   .cooperation_text {
@@ -855,10 +912,14 @@ header {
   margin-bottom: 30px;
 }
 .cooperation_item-text {
-  text-align: justify;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 23px;
   letter-spacing: 0.54px;
+}
+@media only screen and (min-width: 768px) {
+  .cooperation_item-text {
+    font-size: 18px;
+  }
 }
 
 .services {
@@ -1077,9 +1138,13 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
 }
 @media only screen and (min-width: 768px) {
   .order_container {
@@ -1102,7 +1167,6 @@ header {
 }
 .order_textarea {
   width: 99.5%;
-  display: block;
   margin-bottom: 36px;
 }
 @media only screen and (min-width: 768px) {
@@ -1168,12 +1232,21 @@ header {
 }
 .order_politic {
   font-size: 12px;
+  cursor: pointer;
 }
 .order_link {
   color: var(--btn-cl);
   text-decoration: underline;
 }
 .order_lable {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .order_lable {
+    width: 45%;
+  }
+}
+.order_lable-coment {
   width: 100%;
 }
 

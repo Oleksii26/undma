@@ -22,7 +22,6 @@
         font-weight: 300;
         letter-spacing: 0.72px;
         margin-bottom: 50px;
-        text-align: justify;
 
 
         @include bpoint(tablet) {
@@ -44,7 +43,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-   
+
 
         & li {
             border: 1px solid var(--border-cl);
@@ -63,10 +62,13 @@
     }
 
     &_item-text {
-        text-align: justify;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 23px;
         letter-spacing: 0.54px;
+
+        @include bpoint(tablet) {
+            font-size: 18px;
+        }
     }
 
 }
