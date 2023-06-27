@@ -4,6 +4,10 @@
     color: var(--white-cl);
     padding: 40px 80px 60px 80px;
 
+    & a {
+        transition: var(--hover-anim);
+    }
+
     &_container {
         display: block;
 
@@ -109,6 +113,6 @@
     }
 
     & a:hover {
-        color: var(--btn-cl);
+        color: var(--btn-cl-hover);
     }
 }

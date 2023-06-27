@@ -1,0 +1,21 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="30" fill="#F5F5F5"/>
+<g id="&#208;&#145;&#208;&#187;&#208;&#190;&#208;&#179;" clip-path="url(#clip0_10_122)">
+<rect width="1920" height="5403" transform="translate(-1189 -230)" fill="white"/>
+<g id="Rectangle 41">
+<rect x="-9" y="-8" width="386" height="46" stroke="black" stroke-opacity="0.1" stroke-width="2"/>
+<rect x="-9" y="-8" width="386" height="46" stroke="black" stroke-opacity="0.1" stroke-width="2"/>
+</g>
+<g id="Perm phone msg" clip-path="url(#clip1_10_122)">
+<path id="Vector" d="M25 19.375C23.4375 19.375 21.9375 19.125 20.5375 18.6625C20.1 18.525 19.6125 18.625 19.2625 18.9625L16.5125 21.7125C12.975 19.9125 10.075 17.025 8.275 13.4875L11.025 10.725C11.375 10.3875 11.475 9.9 11.3375 9.4625C10.875 8.0625 10.625 6.5625 10.625 5C10.625 4.3125 10.0625 3.75 9.375 3.75H5C4.3125 3.75 3.75 4.3125 3.75 5C3.75 16.7375 13.2625 26.25 25 26.25C25.6875 26.25 26.25 25.6875 26.25 25V20.625C26.25 19.9375 25.6875 19.375 25 19.375ZM15 3.75V16.25L18.75 12.5H26.25V3.75H15Z" fill="#157FE1"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_10_122">
+<rect width="1920" height="5403" fill="white" transform="translate(-1189 -230)"/>
+</clipPath>
+<clipPath id="clip1_10_122">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

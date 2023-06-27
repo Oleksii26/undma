@@ -8,6 +8,14 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    transition: var(--hover-anim);
+
+    &:hover {
+       background-color:  var(--btn-cl-hover);
+    }
+    &:active {
+       background-color:  var(--btn-cl-active);
+    }
 
     @include bpoint(desktop) {
         font-size: 22px;
