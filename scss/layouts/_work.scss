@@ -106,13 +106,16 @@
 
         & li {
             border: 2px solid var(--border-cl);
-            width: 350px;
+            max-width: 350px;
             padding: 20px;
-            height: 429px;
+            height: 325px;
 
             @include bpoint(tablet) {
                 padding: 45px;
+            height: 425px;
+
             }
+          
         }
 
         & li:not(:last-child) {

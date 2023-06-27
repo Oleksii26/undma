@@ -2,7 +2,7 @@
 
     &_title {
         color: var(--header-cl);
-        font-weight: 500;
+        font-family: 'Medium';
         margin-top: 36px;
         margin-bottom: 29px;
 
@@ -17,10 +17,74 @@
         }
     }
 
+
     &_btn-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: 820px) {
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width: 550px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &_input-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 820px) {
+           flex-direction: column;
+        }
+
+        & img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+            @media only screen and (max-width: 820px) {
+                transform: translateY(-80%);
+
+             }
+             @media only screen and (max-width: 550px) {
+                transform: translateY(-50%);
+            }
+        }
+
+        & input {
+            max-width: 220px;
+            height: 100%;
+            padding: 10px 0 10px 50px;
+            font-size: 24px;
+            letter-spacing: 0.72px;
+            margin-right: 20px;
+
+            @media only screen and (max-width: 820px) {
+                margin-bottom: 20px;
+             }
+
+             @media only screen and (max-width: 550px) {
+                margin: 20px 0;
+            }
+
+            @include bpoint(tablet) {
+                max-width: 300px;
+    
+            }
+    
+
+            &::placeholder {
+                color: rgba(47, 47, 47, 0.50);
+                font-size: 18px;
+                letter-spacing: 0.72px;
+            }
+        }
+
     }
 
     &_text {
@@ -83,4 +147,9 @@
 
         }
     }
+}
+
+.container-input {
+    position: relative;
+
 }

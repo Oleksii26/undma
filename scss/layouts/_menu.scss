@@ -11,8 +11,8 @@
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 1.44px;
-    // transition: opacity var(--modal-anim), visibility var(--modal-anim);
     transition: var(--hover-anim);
+
 
     @include bpoint(tablet) {
         font-size: 40px;
@@ -45,10 +45,13 @@
     }
 
     &_list {
+        display: inline-block;
 
         & a {
             // transition: 200ms linear;
+            display: block;
             transition: var(--hover-anim);
+            transform-origin: center center;
         }
 
         & li:not(:last-child) {
@@ -63,16 +66,19 @@
 
 
     & a:hover {
-        // font-family: 'Bold';
-        // font-weight: 60px;
-        font-weight: bold;
+        font-family: 'Bold';
+        font-weight: 60px;
         letter-spacing: 1.8px;
         color: var(--btn-cl);
+        transform: scale(1.2);
 
     }
 
     &_close {
         cursor: pointer;
+        // fill: var(--btn-cl);
+        fill: white;
+        transition: var(--hover-anim);
     }
 }
 

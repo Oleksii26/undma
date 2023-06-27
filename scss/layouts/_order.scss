@@ -1,6 +1,5 @@
 .order {
 
-
     &_title {
         text-align: center;
         margin-bottom: 20px;
@@ -29,22 +28,41 @@
     &_input {
         margin-top: 20px;
         display: block;
-        height: 60px;
         width: 100%;
         margin-bottom: 30px;
-        font-size: 24px;
+        font-size: 18px;
         letter-spacing: 0.72px;
-        padding: 16px 0 16px 30px;
+        padding: 16px 0 16px 15px;
         border-color: rgba(0, 0, 0, 0.10);
-        ;
+
+        @include bpoint(tablet) {
+            font-size: 29px;
+            margin-bottom: 60px;
+            padding: 16px 0 16px 40px;
+
+
+        }
+
+        @include bpoint(desktop) {
+            height: 60px;
+            padding: 16px 0 16px 40px;
+
+        }
 
 
         &::placeholder {
-            padding-left: 40px;
-            font-size: 24px;
+            padding-left: -40px;
+            font-size: 16px;
             letter-spacing: 0.72px;
             color: rgba(47, 47, 47, 0.50);
 
+            @include bpoint(tablet) {
+                font-size: 19px;
+            }
+
+            @include bpoint(desktop) {
+                font-size: 24px;
+            }
 
         }
     }
@@ -86,6 +104,7 @@
     }
 
     &_confirmation {
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -102,8 +121,19 @@
     }
 
     &_politic {
-        font-size: 24px;
+        font-size: 16px;
         cursor: pointer;
+
+        @include bpoint(tablet) {
+            font-size: 19px;
+
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 24px;
+
+        }
     }
 
     &_link {
@@ -113,9 +143,19 @@
 
     &_lable {
         width: 100%;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 300;
         letter-spacing: 0.72px;
+
+        @include bpoint(tablet) {
+            font-size: 19px;
+
+        }
+
+        @include bpoint(desktop) {
+            font-size: 24px;
+
+        }
     }
 
     &_lable-coment {
@@ -124,18 +164,43 @@
     }
 
     &_form {
-        width: 240px;
+        max-width: 320px;
         margin-left: auto;
         margin-right: auto;
 
         @include bpoint(tablet) {
-            margin-bottom: 80px;
-        width: 500px;
+            max-width: 500px;
 
         }
 
         @include bpoint(desktop) {
-            width: 660px;
+            max-width: 660px;
         }
     }
+
+}
+
+#click {
+    display: none;
+}
+
+
+.marker {
+    fill: var(--white-cl);
+    outline: 2px solid rgba(0, 0, 0, 0.20);
+    margin-right: 20px;
+    cursor: pointer;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.label_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#click:checked+.marker {
+    background-color: var(--btn-cl);
+    outline: none;
 }

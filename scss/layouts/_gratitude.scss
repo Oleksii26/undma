@@ -7,9 +7,20 @@
     &_title {
         color: var(--header-cl);
         text-align: center;
-        font-weight: 500;
-        margin-top: 77px;
+        font-family: 'Medium';
+        margin-top: 48px;
+        margin-bottom: 36px;
+
+        @include bpoint(tablet) {
+            margin-top: 60px;
+        margin-bottom: 45px;
+
+        }
+
+        @include bpoint(desktop) {
+            margin-top: 77px;
         margin-bottom: 50px;
+        }
     }
 
     &_text {

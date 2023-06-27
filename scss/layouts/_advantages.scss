@@ -5,9 +5,11 @@
     &_title {
         color: var(--white-cl);
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20px;
-        font-size: 34px;
-
+        max-width: 1072px;
+        
     }
 
     &_text {

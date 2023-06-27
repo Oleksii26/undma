@@ -28,9 +28,8 @@
 
 .title {
     color: var(--header-cl);
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: 2.16px;
-    font-weight: 300;
 
     @include bpoint(tablet) {
         font-size: 57px;

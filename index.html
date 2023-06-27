@@ -17,19 +17,19 @@
         <a href="index.html">
             <img class="logo" src="./img/svg/Logo.svg" alt="logo">
         </a>
-        <svg class="container-menu" fill="none" width="100" height="40" viewBox="0 0 1 40">
-            <path stroke="#F9F9F9" stroke-width="2" d="M0 1.052h50m-50 16h50m-50 16h50" />
+        <svg class="container-menu" fill="white" width="60" height="42">
+            <use href="./img/svg/sprite.svg#_menu_24px"></use>
         </svg>
-        <!-- <div class="container-menu">
-            <div class="burger"></div>
-        </div> -->
+
         <div class="menu is-hidden">
             <div class="menu_header">
 
                 <a href="index.html">
                     <img class="logo" src="./img/svg/Logo.svg" alt="logo">
                 </a>
-                <img class="menu_close" src="./img/close.png" alt="close">
+                <svg class="menu_close" width="38" height="'38">
+                    <use href="./img/svg/sprite.svg#close"></use>
+                </svg>
             </div>
 
             <ul class="menu_list">
@@ -223,33 +223,37 @@
             <h2 class="order_title title">Ви готові до співпраці?</h2>
             <h4 class="order_sub-title">Заповніть форму нижче, щоб отримати прорахунок робіт!</h4>
             <form class="order_form">
-                    <label for="" class="order_lable">
-                        Ім'я
-                        <input class="order_input" type="text" placeholder="Ім'я">
-                    </label>                   
-                    <label for="" class="order_lable">
-                        Телефон<span class="order_star">*</span>
-                        <input class="order_input" type="text" placeholder="+380 (000) 000 00 00">
-                    </label>
-                    <label for="" class="order_lable">
-                        E-mail
-                        <input class="order_input" type="text" placeholder="example@example.com">
-                    </label>
+                <label for="" class="order_lable">
+                    Ім'я
+                    <input class="order_input" type="text" placeholder="Ім'я">
+                </label>
+                <label for="" class="order_lable">
+                    Телефон<span class="order_star">*</span>
+                    <input class="order_input" type="text" placeholder="+380 (000) 000 00 00">
+                </label>
+                <label for="" class="order_lable">
+                    E-mail
+                    <input class="order_input" type="text" placeholder="example@example.com">
+                </label>
                 <div class="order_sub-container">
-                   
+
                     <div class="order_confirmation">
 
+                        <label class="label_check" for="click">
                         <input type="checkbox" id="click" checked>
-                        <label for="click">
+                                <svg class="marker">
+                                    <use href="./img/svg/sprite.svg#mark"></use>
+                                </svg>
+                      
                             <p class="order_politic">Я погоджуюсь з <a class="order_link"
                                     href="./politic.html">Політиками
                                     Конфіденційності</a> </p>
                         </label>
                     </div>
                 </div>
-                
-                    <button type="button" class="btn order_button">Надіслати</button>
-                  
+
+                <button type="button" class="btn order_button">Надіслати</button>
+
             </form>
         </section>
     </main>
