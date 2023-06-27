@@ -29,22 +29,22 @@
 
 @font-face {
   font-family: "Bold";
-  src: local("Gilroy"), url("../../fonts/Gilroy-Bold.ttf");
+  src: local("Gilroy"), url("../fonts/Gilroy-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: "Medium";
-  src: local("Gilroy"), url("../../fonts/Gilroy-Medium.ttf");
+  src: local("Gilroy"), url("../fonts/Gilroy-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Regular";
-  src: local("Gilroy"), url("../../fonts/Gilroy-Regular.ttf");
+  src: local("Gilroy"), url("../fonts/Gilroy-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Light";
-  src: local("Gilroy"), url("../../fonts/Gilroy-Light.ttf");
+  src: local("Gilroy"), url("../fonts/Gilroy-Light.ttf");
   font-weight: 300;
 }
 body {
