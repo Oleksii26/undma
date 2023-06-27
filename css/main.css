@@ -294,12 +294,6 @@ ol {
 .footer_list li:not(:last-child) {
   margin-right: 20px;
 }
-.footer_list svg {
-  fill: red;
-}
-.footer_list img {
-  color: red;
-}
 .footer_text {
   text-align: center;
   letter-spacing: 0;
@@ -337,6 +331,12 @@ ol {
   .footer_email {
     display: block;
   }
+}
+.footer svg:hover {
+  fill: currentColor;
+}
+.footer a:hover {
+  color: var(--btn-cl);
 }
 
 header {
@@ -535,7 +535,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 17px 40px 17px 40px;
+  padding: 17px 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -557,21 +557,6 @@ header {
 .menu_list li {
   margin-bottom: 20px;
 }
-.menu_list li:first-child {
-  letter-spacing: 1.8px;
-  font-size: 30px;
-  font-weight: 700;
-}
-@media only screen and (min-width: 768px) {
-  .menu_list li:first-child {
-    font-size: 44px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .menu_list li:first-child {
-    font-size: 60px;
-  }
-}
 .menu_list li:not(:last-child) {
   font-weight: 300px;
   margin-bottom: 30px;
@@ -580,6 +565,9 @@ header {
   .menu_list li:not(:last-child) {
     margin-bottom: 40px;
   }
+}
+.menu a:hover {
+  font-weight: 700;
 }
 .menu_close {
   cursor: pointer;

@@ -12,6 +12,7 @@
             justify-content: space-between;
             margin-bottom: 50px;
         }
+
         @include bpoint(desktop) {
             display: flex;
             justify-content: space-between;
@@ -63,14 +64,6 @@
         & li:not(:last-child) {
             margin-right: 20px;
         }
-
-        & svg {
-            fill: red;
-        }
-
-        & img {
-            color: red;
-        }
     }
 
 
@@ -79,7 +72,7 @@
         letter-spacing: 0;
     }
 
-     &_sub-container {
+    &_sub-container {
 
         @include bpoint(desktop) {
             display: flex;
@@ -109,5 +102,13 @@
         @include bpoint(tablet) {
             display: block;
         }
+    }
+
+    & svg:hover {
+        fill: currentColor
+    }
+
+    & a:hover {
+        color: var(--btn-cl);
     }
 }

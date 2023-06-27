@@ -26,7 +26,7 @@
 
     &_header {
         display: flex;
-        padding: 17px 40px 17px 40px;
+        padding: 17px 40px;
 
         justify-content: space-between;
         align-items: center;
@@ -45,39 +45,43 @@
     }
 
     &_list {
-  
+
         & li {
             margin-bottom: 20px;
         }
 
-        & li:first-child {
-            letter-spacing: 1.8px;
-            font-size: 30px;
-            font-weight: 700;
 
-            @include bpoint(tablet) {
-                font-size: 44px;
 
-            }
+        // & li:first-child {
+        //     letter-spacing: 1.8px;
+        //     font-size: 30px;
+        //     font-weight: 700;
 
-            @include bpoint(desktop) {
-                font-size: 60px;
+        //     @include bpoint(tablet) {
+        //         font-size: 44px;
 
-            }
-        }
+        //     }
+
+        //     @include bpoint(desktop) {
+        //         font-size: 60px;
+
+        //     }
+        // }
 
         & li:not(:last-child) {
             font-weight: 300px;
             margin-bottom: 30px;
 
-            // @include bpoint(tablet) {
-            //     margin-bottom: 30px;
-            // }
-
             @include bpoint(desktop) {
                 margin-bottom: 40px;
             }
         }
+    }
+
+
+    & a:hover {
+        font-weight: 700;
+
     }
 
     &_close {
