@@ -1,5 +1,5 @@
 :root {
-  --accent-font: "Glilroy", sans-serif;
+  --accent-font: "Light", sans-serif;
   --header-cl: #000000;
   --white-cl: #ffffff;
   --border-cl: rgba(0, 0, 0, 0.20);
@@ -26,28 +26,24 @@
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url("../../fonts/gilroy-bold-webfont.woff2") format("woff2"), url("../../fonts/gilroy-bold-webfont.woff") format("woff");
+  font-family: "Bold";
+  src: local("Gilroy"), url("../../fonts/Gilroy-Bold.ttf");
   font-weight: 700;
-  font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../../fonts/gilroy-medium-webfont.woff") format("woff");
+  font-family: "Medium";
+  src: local("Gilroy"), url("../../fonts/Gilroy-Medium.ttf");
   font-weight: 500;
-  font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../../fonts/gilroy-regular-webfont.woff2") format("woff2"), url("../../fonts/gilroy-regular-webfont.woff") format("woff");
+  font-family: "Regular";
+  src: local("Gilroy"), url("../../fonts/Gilroy-Regular.ttf");
   font-weight: 400;
-  font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../../fonts/gilroy-light-webfont.woff2") format("woff2"), url("../../fonts/gilroy-light-webfont.woff") format("woff");
+  font-family: "Light";
+  src: local("Gilroy"), url("../../fonts/Gilroy-Light.ttf");
   font-weight: 300;
-  font-style: normal;
 }
 body {
   font-family: var(--accent-font);
@@ -356,7 +352,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   font-size: 26px;
-  font-family: "Gilory", sans-serif;
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -439,7 +434,7 @@ header {
   }
 }
 .hero_number-one {
-  font-weight: 500;
+  font-family: "Medium";
 }
 .hero_text {
   font-size: 12px;
@@ -567,7 +562,7 @@ header {
   }
 }
 .menu a:hover {
-  font-weight: 700;
+  font-family: "Bold";
 }
 .menu_close {
   cursor: pointer;
@@ -772,6 +767,7 @@ header {
 }
 .portfolio_btn {
   color: var(--white-cl);
+  font-family: "Medium";
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -1086,7 +1082,6 @@ header {
   .order_sub-title {
     font-size: 29px;
     margin-bottom: 60px;
-    text-align: left;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -1236,6 +1231,10 @@ header {
 }
 .order_lable-coment {
   width: 100%;
+}
+.order_form {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 768px) {
