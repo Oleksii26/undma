@@ -39,7 +39,9 @@
 
 
         @include bpoint(desktop) {
-            justify-content: space-between;
+        justify-content: center;
+
+            // justify-content: space-between;
         }
 
     }
