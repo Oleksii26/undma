@@ -778,9 +778,9 @@ header svg:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -804,6 +804,7 @@ header svg:hover {
   -webkit-transition: var(--hover-anim);
   transition: var(--hover-anim);
   cursor: pointer;
+  width: 300px;
 }
 .portfolio_btn:active {
   background-color: var(--btn-cl);
@@ -1154,8 +1155,23 @@ header svg:hover {
 }
 
 .reviews {
+  position: relative;
   background-color: var(--section-cl);
   text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .reviews_title {
   color: var(--sacondary-cl-text);
@@ -1915,25 +1931,6 @@ header svg:hover {
   position: relative;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Roboto", sans-serif;
-}
-
 .wrapper {
   position: relative;
   max-width: 960px;
@@ -1948,6 +1945,8 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slider {
@@ -1960,33 +1959,12 @@ body {
 }
 
 .slide {
-  float: left;
   height: 100%;
   width: 20%;
   background-size: cover;
 }
 
-.slide:nth-child(1) {
-  background-image: url(https://unsplash.it/960/540);
-}
-
-.slide:nth-child(2) {
-  background-image: url(https://unsplash.it/961/540);
-}
-
-.slide:nth-child(3) {
-  background-image: url(https://unsplash.it/962/540);
-}
-
-.slide:nth-child(4) {
-  background-image: url(https://unsplash.it/963/540);
-}
-
-.slide:nth-child(5) {
-  background-image: url(https://unsplash.it/964/540);
-}
-
-.btn {
+.btn1 {
   position: absolute;
   top: 250px;
   width: 40px;

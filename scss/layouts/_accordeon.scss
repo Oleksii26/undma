@@ -1,15 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-}
 
 .wrapper {
     position: relative;
@@ -18,12 +6,15 @@ body {
     height: 56.25vw;
     max-height: 540px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .35);
+
 }
 
 .slider-wrap {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slider {
@@ -35,33 +26,34 @@ body {
 }
 
 .slide {
-    float: left;
     height: 100%;
     width: 20%;
     background-size: cover;
+
 }
 
-.slide:nth-child(1) {
-    background-image: url(https://unsplash.it/960/540);
-}
+// .slide:nth-child(1) {
+//     background: url(.../../../../img/reviev.jpg);
+// }
 
-.slide:nth-child(2) {
-    background-image: url(https://unsplash.it/961/540);
-}
+// .slide:nth-child(2) {
+//     background-image: url(.../../../../img/reviev.jpg);
 
-.slide:nth-child(3) {
-    background-image: url(https://unsplash.it/962/540);
-}
+// }
 
-.slide:nth-child(4) {
-    background-image: url(https://unsplash.it/963/540);
-}
+// .slide:nth-child(3) {
+//     background-image: url(.../../../../img/reviev.jpg);
+// }
 
-.slide:nth-child(5) {
-    background-image: url(https://unsplash.it/964/540);
-}
+// .slide:nth-child(4) {
+//     background-image: url(https://unsplash.it/963/540);
+// }
 
-.btn {
+// .slide:nth-child(5) {
+//     background-image: url(https://unsplash.it/964/540);
+// }
+
+.btn1 {
     position: absolute;
     top: 250px;
     width: 40px;

@@ -31,7 +31,7 @@
     &_list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         margin-bottom: 50px;
         align-items: center;
 
@@ -59,8 +59,11 @@
         margin-bottom: 10px;
         transition: var(--hover-anim);
         cursor: pointer;
+        width: 300px;
 
         // &:hover {
+        //     text-shadow: 2px 2px 4px #fff;
+        //     box-shadow: 2px 2px 4px #fff;;
         //     color: var(--btn-cl);
         //     border: 1px solid var(--btn-cl);
         // }
