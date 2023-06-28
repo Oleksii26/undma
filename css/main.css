@@ -394,9 +394,6 @@ header {
     padding: 32px 80px;
   }
 }
-header svg {
-  height: 40px;
-}
 header svg:hover {
   fill: var(--btn-cl);
   -webkit-transition: var(--hover-anim);
@@ -627,12 +624,12 @@ header svg:hover {
 }
 .menu_close {
   cursor: pointer;
-  fill: red;
+  fill: var(--white-cl);
   -webkit-transition: var(--hover-anim);
   transition: var(--hover-anim);
 }
 .menu_close:hover {
-  fill: red;
+  fill: var(--btn-cl);
 }
 
 .is-hidden {
@@ -847,9 +844,13 @@ header svg:hover {
   cursor: pointer;
   width: 300px;
 }
+.portfolio_btn:hover {
+  -webkit-box-shadow: inset 17em 0 0 0 var(--btn-cl);
+          box-shadow: inset 17em 0 0 0 var(--btn-cl);
+}
 .portfolio_btn:active {
-  background-color: var(--btn-cl);
-  color: var(--white-cl);
+  border-color: var(--sacondary-cl-txt);
+  color: var(--sacondary-cl-txt);
 }
 @media only screen and (min-width: 768px) {
   .portfolio_btn {
@@ -860,10 +861,11 @@ header svg:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 40px;
+  gap: 30px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_list-img {
@@ -873,8 +875,9 @@ header svg:hover {
 .portfolio_list-img-title {
   color: var(--white-cl);
   font-size: 23px;
-  font-weight: 500;
+  font-weight: "Bold";
   letter-spacing: 1.08px;
+  max-width: 300px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_list-img-title {
@@ -1205,6 +1208,9 @@ header svg:hover {
   overflow: hidden;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
+}
+.accordeon__content p {
+  font-family: "Light";
 }
 
 .arrow {

@@ -90,12 +90,12 @@
 
     @include bpoint(tablet) {
         padding-top: 40px;
-    padding-bottom: 15px;
+        padding-bottom: 15px;
     }
 
     @include bpoint(desktop) {
         padding-top: 50px;
-    padding-bottom: 20px;
+        padding-bottom: 20px;
     }
 
 
@@ -154,6 +154,10 @@
     max-height: 0;
     overflow: hidden;
     transition: .2s ease all;
+
+    & p {
+        font-family: 'Light';
+    }
 }
 
 .arrow {

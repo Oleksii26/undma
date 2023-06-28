@@ -37,12 +37,13 @@
         margin-bottom: 50px;
         align-items: center;
 
-     
+
         @include bpoint(desktop) {
-        justify-content: space-between;
+            justify-content: space-between;
         }
 
     }
+
 
     &_btn {
         color: var(--white-cl);
@@ -60,18 +61,16 @@
         cursor: pointer;
         width: 300px;
 
-        
 
-        // &:hover {
-        //     text-shadow: 2px 2px 4px #fff;
-        //     box-shadow: 2px 2px 4px #fff;;
-        //     color: var(--btn-cl);
-        //     border: 1px solid var(--btn-cl);
-        // }
+        
+        &:hover {
+            box-shadow: inset 17em 0 0 0 var(--btn-cl);
+           
+        }
 
         &:active {
-            background-color: var(--btn-cl);
-            color: var(--white-cl);
+            border-color: var(--sacondary-cl-txt);
+            color: var(--sacondary-cl-txt);
         }
 
         @include bpoint(tablet) {
@@ -82,8 +81,9 @@
 
     &_list-img {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 40px;
+        gap: 30px;
 
         @include bpoint(tablet) {
             margin-bottom: 87px;
@@ -96,8 +96,10 @@
     &_list-img-title {
         color: var(--white-cl);
         font-size: 23px;
-        font-weight: 500;
+        font-weight: 'Bold';
         letter-spacing: 1.08px;
+        max-width: 300px;
+
 
         @include bpoint(tablet) {
             font-size: 29px;

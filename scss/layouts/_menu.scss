@@ -89,12 +89,11 @@
 
     &_close {
         cursor: pointer;
-        // fill: var(--btn-cl);
-        fill: red;
+        fill: var(--white-cl);
         transition: var(--hover-anim);
 
         &:hover {
-            fill: red;
+            fill: var(--btn-cl);
         }
     }
 }
