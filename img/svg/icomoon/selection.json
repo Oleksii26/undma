@@ -4,7 +4,8 @@
     {
       "icon": {
         "paths": [
-          "M46.545 954.182l744.727-861.091 674.909 861.091"
+          "M42.415 972.078l928.303-928.304",
+          "M44.823 60.203l928.303 928.304"
         ],
         "attrs": [
           {
@@ -12,13 +13,20 @@
             "strokeLinejoin": "miter",
             "strokeLinecap": "butt",
             "strokeMiterlimit": "4",
-            "strokeWidth": 93.0909090909091
+            "strokeWidth": 52.51282051282051
+          },
+          {
+            "fill": "none",
+            "strokeLinejoin": "miter",
+            "strokeLinecap": "butt",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 52.51282051282051
           }
         ],
-        "width": 1536,
-        "grid": 16,
+        "width": 998,
+        "grid": 0,
         "tags": [
-          "arrow"
+          "Frame"
         ]
       },
       "attrs": [
@@ -27,17 +35,24 @@
           "strokeLinejoin": "miter",
           "strokeLinecap": "butt",
           "strokeMiterlimit": "4",
-          "strokeWidth": 93.0909090909091
+          "strokeWidth": 52.51282051282051
+        },
+        {
+          "fill": "none",
+          "strokeLinejoin": "miter",
+          "strokeLinecap": "butt",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 52.51282051282051
         }
       ],
       "properties": {
-        "order": 13,
+        "order": 18,
         "id": 1,
-        "name": "arrow",
+        "name": "close",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 2,
+      "setId": 3,
       "iconIdx": 0
     }
   ],

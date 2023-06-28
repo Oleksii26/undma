@@ -1,111 +1,95 @@
 .reviews {
+  text-align: center;
+  position: relative;
+  background-color: var(--section-cl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+
+  &_title {
+    color: var(--sacondary-cl-text);
     text-align: center;
-    position: relative;
-    background-color: var(--section-cl);
-    // text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &_lang {
+    color: var(--btn-cl);
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  &_name {
+    color: var(--sacondary-cl-text);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1.08px;
+    margin-bottom: 10px;
+
+    @include bpoint(tablet) {
+      font-size: 36px;
+
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    // margin: 50px auto;
     overflow: hidden;
+
+    @include bpoint(tablet) {
+      width: 400px;
+    }
+
+    @include bpoint(desktop) {
+      width: 1200px;
+    }
+  }
+
+
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .slider-track {
+    display: flex;
+    transition: 0.2s;
+  }
+
+  .slider-item {
+    height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
 
-    &_title {
-        color: var(--sacondary-cl-text);
-        text-align: center;
-        margin-bottom: 100px;
+    @include bpoint(tablet) {
+      align-items: center;
+
     }
+  }
+
+  .slider-buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    display: none;
+  }
+
+  label img {
+    width: 50px;
+    margin-bottom: 30px;
+  }
 
 
-    // @include bpoint(tablet) {
-    //     margin-bottom: 70px;
-    // }
-
-    // @include bpoint(desktop) {
-    //     margin-bottom: 90px;
-    // }
-
-
-
-    &_lang {
-        color: var(--btn-cl);
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    &_name {
-        color: var(--sacondary-cl-text);
-        font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 1.08px;
-        margin-bottom: 10px;
-
-        @include bpoint(tablet) {
-            font-size: 36px;
-
-        }
-    }
-
-
-
-    &_wrapper {
-        width: 1000px;
-        margin: 50px auto;
-        // border: 1px solid red;
-    }
-
-    //   h1 {
-    //     color: white;
-    //     text-align:center;
-    //     font-size:80px;
-    //   }
-
-    &_slider-container {
-        overflow: hidden;
-        // background-color: pink;
-    }
-
-    &_slider-track {
-        // background-color: yellow;
-        display: flex;
-        transition: 0.2s;
-    }
-
-    &_slider-item {
-        min-width: 10px;
-        height: 500px;
-        // text-align: center;
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
-        // align-items: center;
-    }
-
-    //   .slider-item:nth-child(3n + 1) {
-    //     background-color: #2a9d8f;
-    //   }
-    //   .slider-item:nth-child(3n + 2) {
-    //     background-color: #f4a261;
-    //   }
-    //   .slider-item:nth-child(3n + 3) {
-    //     background-color: #264653;
-    //   }
-
-    &_slider-buttons {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-   & button {
-        display: none;
-    }
-
-   & label img {
-        width: 50px;
-    }
-
-    &_arrow {
-        cursor: pointer;
-        padding: 20px;
-    }
 
 }

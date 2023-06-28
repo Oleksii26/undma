@@ -5,6 +5,8 @@ function initAccordeon () {
       })
     });
   }
+
+  const allElements = document.querySelector('.js-toggle-accordeon')
   
   function toggleAccordeon (event) {
     const currentAccordeon = event.currentTarget;
@@ -16,6 +18,7 @@ function initAccordeon () {
       contentHolder.style.maxHeight = 0;
     } else {
       contentHolder.style.maxHeight = `${contentHeight}px`;
+      allElements.classList.remove('is-active')
       currentAccordeon.classList.add('is-active');
     }
   }

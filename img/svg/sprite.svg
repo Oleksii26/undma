@@ -1,5 +1,14 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
+<symbol id="icon-close" fill='white' viewBox="0 0 31 32">
+      <path stroke-width="1.641" d="M1.325 30.377 30.334 1.368M1.401 1.881 30.41 30.89"/>
+    </symbol>
+
+
+  <symbol id="frame" viewBox="0 0 31 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.641" d="M1.325 30.377l29.009-29.009"></path>
+<path stroke="#f9f9f9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.641" d="M1.401 1.881l29.009 29.009"></path>
+</symbol>
 
    <symbol id="check-el" viewBox="0 0 32 32">
       <path stroke-width="1.6" d="M.8.8h30.4v30.4H.8V.8z"/>

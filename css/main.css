@@ -101,7 +101,7 @@ ol {
 }
 
 .section {
-  padding: 30px 50px;
+  padding: 20px 40px;
 }
 @media only screen and (min-width: 768px) {
   .section {
@@ -145,7 +145,7 @@ ol {
 
 .title {
   color: var(--header-cl);
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 2.16px;
 }
 @media only screen and (min-width: 768px) {
@@ -159,61 +159,80 @@ ol {
   }
 }
 
-.llh {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 1px;
-  background-color: var(--btn-cl);
-}
-
-.llv {
-  position: absolute;
-  top: 10px;
-  left: -10px;
-  width: 20px;
-  height: 1px;
-  background-color: var(--btn-cl);
-  rotate: 90deg;
-}
-
-.rlh {
-  position: absolute;
-  bottom: 10px;
-  right: -10px;
-  width: 20px;
-  height: 1px;
-  background-color: var(--btn-cl);
-  rotate: 90deg;
-}
-
-.rlv {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 20px;
-  height: 1px;
-  background-color: var(--btn-cl);
-}
-
-.btn-container {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.super-btn {
   position: relative;
-  width: 250px;
-  height: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
+  color: var(--white-cl);
+  border: 2px solid var(--btn-cl);
+  background: var(--btn-cl);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.super-btn:hover {
+  -webkit-filter: contrast(1.1);
+          filter: contrast(1.1);
+}
+.super-btn:active {
+  -webkit-filter: contrast(0.9);
+          filter: contrast(0.9);
+}
+.super-btn::before, .super-btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--btn-cl);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: clippath 3s infinite linear;
+          animation: clippath 3s infinite linear;
+}
+.super-btn::after {
+  -webkit-animation: clippath 3s infinite -1.5s linear;
+          animation: clippath 3s infinite -1.5s linear;
+}
+
+@-webkit-keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
+}
+
+@keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
+}
+.bg::before {
+  background: var(--btn-cl);
 }
 
 .logo {
@@ -583,7 +602,22 @@ header svg:hover {
     margin-bottom: 40px;
   }
 }
-.menu a:hover {
+@media only screen and (min-width: 1280px) {
+  .menu_list li {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 500px;
+  }
+}
+.menu_list li a:hover {
   font-family: "Bold";
   font-weight: 60px;
   letter-spacing: 1.8px;
@@ -593,9 +627,12 @@ header svg:hover {
 }
 .menu_close {
   cursor: pointer;
-  fill: white;
+  fill: red;
   -webkit-transition: var(--hover-anim);
   transition: var(--hover-anim);
+}
+.menu_close:hover {
+  fill: red;
 }
 
 .is-hidden {
@@ -726,14 +763,13 @@ header svg:hover {
 }
 .work_list li {
   border: 2px solid var(--border-cl);
-  max-width: 350px;
+  max-width: 300px;
   padding: 20px;
-  height: 325px;
+  max-height: 400px;
 }
 @media only screen and (min-width: 768px) {
   .work_list li {
-    padding: 45px;
-    height: 425px;
+    padding: 35px;
   }
 }
 .work_list li:not(:last-child) {
@@ -778,16 +814,21 @@ header svg:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
   margin-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.portfolio_list li:not(:last-child) {
-  margin-right: 10px;
+@media only screen and (min-width: 1280px) {
+  .portfolio_list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .portfolio_btn {
   color: var(--white-cl);
@@ -1094,8 +1135,20 @@ header svg:hover {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .accordeon__header {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .accordeon__header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 .accordeon__header:hover .accordeon__title {
   -webkit-transform: translateX(4px);
@@ -1154,6 +1207,10 @@ header svg:hover {
   transition: 0.2s ease all;
 }
 
+.arrow {
+  cursor: pointer;
+}
+
 .reviews {
   text-align: center;
   position: relative;
@@ -1172,16 +1229,18 @@ header svg:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 100px;
 }
 .reviews_title {
   color: var(--sacondary-cl-text);
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .reviews_lang {
   color: var(--btn-cl);
   font-weight: 500;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .reviews_name {
   color: var(--sacondary-cl-text);
@@ -1195,37 +1254,73 @@ header svg:hover {
     font-size: 36px;
   }
 }
-.reviews_wrapper {
-  width: 1000px;
-  margin: 50px auto;
-}
-.reviews_slider-container {
+.reviews .wrapper {
+  width: 100%;
   overflow: hidden;
 }
-.reviews_slider-track {
+@media only screen and (min-width: 768px) {
+  .reviews .wrapper {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews .wrapper {
+    width: 1200px;
+  }
+}
+.reviews .slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+.reviews .slider-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.reviews_slider-item {
-  min-width: 10px;
+.reviews .slider-item {
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.reviews_slider-buttons {
+@media only screen and (min-width: 768px) {
+  .reviews .slider-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.reviews .slider-buttons {
   text-align: center;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .reviews button {
   display: none;
 }
 .reviews label img {
   width: 50px;
-}
-.reviews_arrow {
-  cursor: pointer;
-  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .order_title {
@@ -1741,6 +1836,7 @@ header svg:hover {
   font-family: "Medium";
   margin-top: 36px;
   margin-bottom: 29px;
+  max-width: 1070px;
 }
 @media only screen and (min-width: 768px) {
   .blog_title {

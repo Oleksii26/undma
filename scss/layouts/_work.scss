@@ -102,20 +102,21 @@
             @include bpoint(tablet) {
                 font-size: 18px;
             }
-                    }
+        }
 
         & li {
             border: 2px solid var(--border-cl);
-            max-width: 350px;
+            max-width: 300px;
             padding: 20px;
-            height: 325px;
+            max-height: 400px;
+
 
             @include bpoint(tablet) {
-                padding: 45px;
-            height: 425px;
+                padding: 35px;
+
 
             }
-          
+
         }
 
         & li:not(:last-child) {

@@ -9,9 +9,6 @@
         margin-right: auto;
         margin-bottom: 20px;
         max-width: 1072px;
-
-
-
     }
 
     &_text {
@@ -42,7 +39,6 @@
 }
 
 .accordeon {
-    // margin-bottom: 20px;
     font-family: 'Medium';
     font-size: 20px;
 
@@ -89,8 +85,18 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    @include bpoint(tablet) {
+        padding-top: 40px;
+    padding-bottom: 15px;
+    }
+
+    @include bpoint(desktop) {
+        padding-top: 50px;
     padding-bottom: 20px;
+    }
 
 
     &:hover {
@@ -150,55 +156,6 @@
     transition: .2s ease all;
 }
 
-
-
-
-
-
-
-// .advantages {
-//     background-color: var(--sacondary-cl-txt);
-//     color: var(--white-cl);
-
-//     &_title {
-//         color: var(--white-cl);
-//         text-align: center;
-//         margin-left: auto;
-//         margin-right: auto;
-//         margin-bottom: 20px;
-//         max-width: 1072px;
-
-//     }
-
-//     &_text {
-//         text-align: center;
-//         font-size: 19px;
-//         letter-spacing: 1.08px;
-//         margin-bottom: 30px;
-
-//         @include bpoint(tablet) {
-//             font-size: 24px;
-//         }
-
-//         @include bpoint(desktop) {
-//             font-size: 30px;
-//         }
-//     }
-
-//     &_list {
-//         width: 100%;
-
-//         & li:not(:last-child) {
-//             border-bottom: 1px solid var(--white-cl);
-//             // padding-bottom: 50px;
-//         }
-
-//         & li {
-//             margin-top: 50px;
-//             margin-bottom: 50px;
-//             font-size: 36px;
-//             letter-spacing: 1.08px;
-//             display: flex;
-//             justify-content: space-between;
-//         }
-//     }
+.arrow {
+    cursor: pointer;
+}
