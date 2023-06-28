@@ -4,8 +4,7 @@
     {
       "icon": {
         "paths": [
-          "M25.6 25.6h972.8v972.8h-972.8v-972.8z",
-          "M25.6 25.6h972.8v972.8h-972.8v-972.8z"
+          "M46.545 954.182l744.727-861.091 674.909 861.091"
         ],
         "attrs": [
           {
@@ -13,19 +12,13 @@
             "strokeLinejoin": "miter",
             "strokeLinecap": "butt",
             "strokeMiterlimit": "4",
-            "strokeWidth": 51.2
-          },
-          {
-            "fill": "none",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 51.2
+            "strokeWidth": 93.0909090909091
           }
         ],
-        "grid": 0,
+        "width": 1536,
+        "grid": 16,
         "tags": [
-          "check-el"
+          "arrow"
         ]
       },
       "attrs": [
@@ -34,54 +27,25 @@
           "strokeLinejoin": "miter",
           "strokeLinecap": "butt",
           "strokeMiterlimit": "4",
-          "strokeWidth": 51.2
-        },
-        {
-          "fill": "none",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 51.2
+          "strokeWidth": 93.0909090909091
         }
       ],
       "properties": {
-        "order": 3,
+        "order": 13,
         "id": 1,
-        "name": "check-el",
+        "name": "arrow",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 0,
+      "setId": 2,
       "iconIdx": 0
-    },
-    {
-      "icon": {
-        "paths": [
-          "M384 691.2l-179.199-179.2-59.733 59.735 238.933 238.932 512-512-59.732-59.733-452.268 452.266z"
-        ],
-        "attrs": [],
-        "grid": 0,
-        "tags": [
-          "mark"
-        ]
-      },
-      "attrs": [],
-      "properties": {
-        "order": 4,
-        "id": 0,
-        "name": "mark",
-        "prevSize": 32
-      },
-      "setIdx": 0,
-      "setId": 0,
-      "iconIdx": 1
     }
   ],
   "height": 1024,
   "preferences": {
     "showGlyphs": true,
     "showQuickUse": true,
-    "showQuickUse2": true,
+    "showQuickUse2": false,
     "showSVGs": true,
     "fontPref": {
       "prefix": "icon-",

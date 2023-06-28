@@ -14,3 +14,7 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-arrow {
+  width: 1.5em;
+}

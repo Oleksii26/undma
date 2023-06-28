@@ -60,12 +60,10 @@
         transition: var(--hover-anim);
         cursor: pointer;
 
-        &:hover {
-            // color: var(--btn-cl);
-            // border: 1px solid var(--btn-cl);
-            color: var(--white-cl);
-            border: 1px solid var(--white-cl);
-        }
+        // &:hover {
+        //     color: var(--btn-cl);
+        //     border: 1px solid var(--btn-cl);
+        // }
 
         &:active {
             background-color: var(--btn-cl);
