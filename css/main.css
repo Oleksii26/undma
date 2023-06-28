@@ -92,6 +92,10 @@ ol {
   margin: 0;
 }
 
+.void {
+  display: none;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -483,10 +487,12 @@ header svg:hover {
 .hero_btn:hover {
   background-color: #F9E219;
   outline: none;
+  color: var(--sacondary-cl-txt);
 }
 .hero_btn:active {
   background-color: #DBC717;
   outline: none;
+  color: var(--sacondary-cl-txt);
 }
 @media only screen and (min-width: 768px) {
   .hero_btn {
@@ -800,8 +806,8 @@ header svg:hover {
   cursor: pointer;
 }
 .portfolio_btn:hover {
-  color: var(--btn-cl);
-  border: 1px solid var(--btn-cl);
+  color: var(--white-cl);
+  border: 1px solid var(--white-cl);
 }
 .portfolio_btn:active {
   background-color: var(--btn-cl);
@@ -857,6 +863,11 @@ header svg:hover {
   .portfolio_list-img-text {
     font-size: 24px;
   }
+}
+
+#imageContainer {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cooperation {

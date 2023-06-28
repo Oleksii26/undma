@@ -91,10 +91,13 @@
         &:hover {
             background-color: #F9E219;
             outline: none;
+            color: var(--sacondary-cl-txt);
         }
         &:active {
             background-color: #DBC717;
             outline: none;
+            color: var(--sacondary-cl-txt);
+
         }
 
         @include bpoint(tablet) {

@@ -58,11 +58,13 @@
         border: 1px solid var(--white-cl);
         margin-bottom: 10px;
         transition: var(--hover-anim);
-cursor: pointer;
+        cursor: pointer;
 
         &:hover {
-            color: var(--btn-cl);
-            border: 1px solid var(--btn-cl);
+            // color: var(--btn-cl);
+            // border: 1px solid var(--btn-cl);
+            color: var(--white-cl);
+            border: 1px solid var(--white-cl);
         }
 
         &:active {
@@ -119,4 +121,9 @@ cursor: pointer;
         }
     }
 
+}
+
+#imageContainer {
+    margin-left: auto;
+    margin-right: auto;
 }

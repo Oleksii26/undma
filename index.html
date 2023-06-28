@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -85,46 +86,147 @@
                 </li>
             </ul>
         </section>
+        <!-- <section class="slider section">
+            <div style="display: flex;" id="imageContainer">
+                <img id="image1" src="./img/test1.jpg">
+                <img id="image2" src="./img/test3.jpg">
+                <img id="image3" src="./img/reviev.jpg">
+            </div>
+
+            <button onclick="changeImage(1)">Изображение 1</button>
+            <button onclick="changeImage(2)">Изображение 2</button>
+            <button onclick="changeImage(3)">Изображение 3</button>
+        </section> -->
+
         <section id="portfolio" class="portfolio section">
             <h2 class="portfolio_title title">Портфоліо</h2>
             <h5 class="portfolio_sub-title">У нас багато напрямів діяльності. Ось приклади з деяких з них:</h5>
-            <ul class="portfolio_list">
-                <li><button type="button" class="portfolio_btn">Дизайн лого</button></li>
-                <li><button type="button" class="portfolio_btn">Дизайн сайтів</button></li>
-                <li><button type="button" class="portfolio_btn">Брендбук/фірмовий стиль</button></li>
-                <li><button type="button" class="portfolio_btn">презентації</button></li>
-                <li><button type="button" class="portfolio_btn">ДИЗАЙН РЕКЛАМИ ТА БАНЕРІВ</button></li>
-            </ul>
-            <ul class="portfolio_list-img">
-                <li>
-                    <img src="./img/test1.jpg" alt="img" width="300">
-                    <h4 class="portfolio_list-img-title">CYBOR HOLDING</h4>
-                    <p class="portfolio_list-img-text">Company Logo</p>
-                </li>
-                <li>
-                    <img src="./img/test1.jpg" alt="img" width="300">
-                    <h4 class="portfolio_list-img-title">CYBOR HOLDING</h4>
-                    <p class="portfolio_list-img-text">Company Logo</p>
-                </li>
-                <li>
-                    <img src="./img/test1.jpg" alt="img" width="300">
-                    <h4 class="portfolio_list-img-title">CYBOR HOLDING</h4>
-                    <p class="portfolio_list-img-text">Company Logo</p>
-                </li>
-                <li>
-                    <img src="./img/test1.jpg" alt="img" width="300">
-                    <h4 class="portfolio_list-img-title">CYBOR HOLDING</h4>
-                    <p class="portfolio_list-img-text">Company Logo</p>
-                </li>
 
+
+            <ul class="portfolio_list">
+                <li><button id="btn1" onclick="changeImage(1)" type="button" class="portfolio_btn">Дизайн лого</button></li>
+                <li><button id="btn2" onclick="changeImage(2)" type="button" class="portfolio_btn">Дизайн сайтів</button></li>
+                <li><button id="btn3" onclick="changeImage(3)" type="button" class="portfolio_btn">Брендбук/фірмовий
+                        стиль</button></li>
+                <li><button id="btn4" onclick="changeImage(4)" type="button" class="portfolio_btn">презентації</button></li>
+                <li><button id="btn5" onclick="changeImage(5)" type="button" class="portfolio_btn">ДИЗАЙН РЕКЛАМИ ТА
+                        БАНЕРІВ</button></li>
             </ul>
-            <div class="btn-container">
-                <div class="rlh"></div>
-                <div class="rlv"></div>
-                <a href="#" class="btn portfolio_button">дивись більше на behance</a>
-                <div class="llh"></div>
-                <div class="llv"></div>
+            <div id="imageContainer">
+                <ul id="image1" class="portfolio_list-img">
+                    <li>
+                        <img src="./img/test1.jpg" alt="img" width="300">
+                        <h4 class="portfolio_list-img-title">1CYBOR HOLDING</h4>
+                        <p class="portfolio_list-img-text">Company Logo</p>
+                    </li>
+                    <li>
+                        <img src="./img/test1.jpg" alt="img" width="300">
+                        <h4 class="portfolio_list-img-title">1CYBOR HOLDING</h4>
+                        <p class="portfolio_list-img-text">Company Logo</p>
+                    </li>
+                    <li>
+                        <img src="./img/test1.jpg" alt="img" width="300">
+                        <h4 class="portfolio_list-img-title">1CYBOR HOLDING</h4>
+                        <p class="portfolio_list-img-text">Company Logo</p>
+                    </li>
+                    <li>
+                        <img src="./img/test1.jpg" alt="img" width="300">
+                        <h4 class="portfolio_list-img-title">1CYBOR HOLDING</h4>
+                        <p class="portfolio_list-img-text">Company Logo</p>
+                    </li>
+                </ul>
+                
+                    <ul id="image2" style="display: none;" class="portfolio_list-img">
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">2CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">2CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">2CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">2CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                    </ul>
+                    <ul id="image3" style="display: none;" class="portfolio_list-img">
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">3CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">3CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">3CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">3CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                    </ul>
+                    <ul id="image4" style="display: none;" class="portfolio_list-img">
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">4CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">4CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">4CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">4CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                    </ul>
+                    <ul id="image5" style="display: none;" class="portfolio_list-img">
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">5CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">5CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">5CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                        <li>
+                            <img src="./img/test1.jpg" alt="img" width="300">
+                            <h4 class="portfolio_list-img-title">5CYBOR HOLDING</h4>
+                            <p class="portfolio_list-img-text">Company Logo</p>
+                        </li>
+                    </ul>
+                
             </div>
+
         </section>
         <section class="cooperation section">
             <h4 class="cooperation_title">Схеми співробітництва</h4>
@@ -240,11 +342,11 @@
                     <div class="order_confirmation">
 
                         <label class="label_check" for="click">
-                        <input type="checkbox" id="click" checked>
-                                <svg class="marker">
-                                    <use href="./img/svg/sprite.svg#mark"></use>
-                                </svg>
-                      
+                            <input type="checkbox" id="click" checked>
+                            <svg class="marker">
+                                <use href="./img/svg/sprite.svg#mark"></use>
+                            </svg>
+
                             <p class="order_politic">Я погоджуюсь з <a class="order_link"
                                     href="./politic.html">Політиками
                                     Конфіденційності</a> </p>
@@ -316,6 +418,9 @@
         </p>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/portfolio.js"></script>
+
 </body>
 
 </html>
