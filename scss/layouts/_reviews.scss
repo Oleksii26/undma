@@ -1,7 +1,8 @@
 .reviews {
+    text-align: center;
     position: relative;
     background-color: var(--section-cl);
-    text-align: center;
+    // text-align: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -14,27 +15,16 @@
         margin-bottom: 100px;
     }
 
-    &_list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
 
-        @include bpoint(tablet) {
-            margin-bottom: 70px;
-        }
+    // @include bpoint(tablet) {
+    //     margin-bottom: 70px;
+    // }
 
-        @include bpoint(desktop) {
-            margin-bottom: 90px;
-        }
-    }
+    // @include bpoint(desktop) {
+    //     margin-bottom: 90px;
+    // }
 
-    &_list li {
-        text-align: left;
-        max-width: 420px;
-        margin-bottom: 30px;
-    }
+
 
     &_lang {
         color: var(--btn-cl);
@@ -55,7 +45,67 @@
         }
     }
 
-    & video {
-        width: 100%;
+
+
+    &_wrapper {
+        width: 1000px;
+        margin: 50px auto;
+        // border: 1px solid red;
     }
+
+    //   h1 {
+    //     color: white;
+    //     text-align:center;
+    //     font-size:80px;
+    //   }
+
+    &_slider-container {
+        overflow: hidden;
+        // background-color: pink;
+    }
+
+    &_slider-track {
+        // background-color: yellow;
+        display: flex;
+        transition: 0.2s;
+    }
+
+    &_slider-item {
+        min-width: 10px;
+        height: 500px;
+        // text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+    }
+
+    //   .slider-item:nth-child(3n + 1) {
+    //     background-color: #2a9d8f;
+    //   }
+    //   .slider-item:nth-child(3n + 2) {
+    //     background-color: #f4a261;
+    //   }
+    //   .slider-item:nth-child(3n + 3) {
+    //     background-color: #264653;
+    //   }
+
+    &_slider-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+   & button {
+        display: none;
+    }
+
+   & label img {
+        width: 50px;
+    }
+
+    &_arrow {
+        cursor: pointer;
+        padding: 20px;
+    }
+
 }
