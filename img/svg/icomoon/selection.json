@@ -4,56 +4,58 @@
     {
       "icon": {
         "paths": [
-          "M42.415 972.078l928.303-928.304",
-          "M44.823 60.203l928.303 928.304"
+          "M992 512l-480-480v288h-512v384h512v288z"
         ],
-        "attrs": [
-          {
-            "fill": "none",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 52.51282051282051
-          },
-          {
-            "fill": "none",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 52.51282051282051
-          }
-        ],
-        "width": 998,
-        "grid": 0,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "tags": [
-          "Frame"
-        ]
+          "arrow-right",
+          "right",
+          "next"
+        ],
+        "defaultCode": 59956,
+        "grid": 16
       },
-      "attrs": [
-        {
-          "fill": "none",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 52.51282051282051
-        },
-        {
-          "fill": "none",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 52.51282051282051
-        }
-      ],
+      "attrs": [],
       "properties": {
-        "order": 18,
-        "id": 1,
-        "name": "close",
+        "ligatures": "arrow-right, right3",
+        "name": "arrow-right",
+        "id": 308,
+        "order": 12,
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 0
+      "setId": 4,
+      "iconIdx": 308
+    },
+    {
+      "icon": {
+        "paths": [
+          "M32 512l480 480v-288h512v-384h-512v-288z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "arrow-left",
+          "left",
+          "previous"
+        ],
+        "defaultCode": 59960,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "arrow-left, left3",
+        "name": "arrow-left",
+        "id": 312,
+        "order": 13,
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 312
     }
   ],
   "height": 1024,

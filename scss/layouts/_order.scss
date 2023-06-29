@@ -26,6 +26,7 @@
 
 
     &_input {
+        font-family: 'Regular';
         margin-top: 20px;
         display: block;
         width: 100%;
@@ -51,6 +52,7 @@
 
 
         &::placeholder {
+            font-family: 'Regular';
             padding-left: -40px;
             font-size: 16px;
             letter-spacing: 0.72px;

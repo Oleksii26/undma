@@ -917,8 +917,8 @@ header svg:hover {
           justify-content: center;
   margin-bottom: 40px;
   gap: 30px;
-  -webkit-transition: 400ms linear;
-  transition: 400ms linear;
+  -webkit-transition: 500ms linear;
+  transition: 500ms linear;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -1428,9 +1428,27 @@ header svg:hover {
 .reviews button {
   display: none;
 }
-.reviews label img {
+.reviews label {
+  margin-right: 20px;
+}
+.reviews label svg {
+  fill: var(--btn-cl);
   width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews label svg:hover {
+    fill: var(--btn-cl-hover);
+  }
+  .reviews label svg:active {
+    fill: var(--btn-cl-active);
+  }
 }
 
 .order_title {
@@ -1457,6 +1475,7 @@ header svg:hover {
   }
 }
 .order_input {
+  font-family: "Regular";
   margin-top: 20px;
   display: block;
   width: 100%;
@@ -1480,30 +1499,35 @@ header svg:hover {
   }
 }
 .order_input::-webkit-input-placeholder {
+  font-family: "Regular";
   padding-left: -40px;
   font-size: 16px;
   letter-spacing: 0.72px;
   color: rgba(47, 47, 47, 0.5);
 }
 .order_input::-moz-placeholder {
+  font-family: "Regular";
   padding-left: -40px;
   font-size: 16px;
   letter-spacing: 0.72px;
   color: rgba(47, 47, 47, 0.5);
 }
 .order_input:-ms-input-placeholder {
+  font-family: "Regular";
   padding-left: -40px;
   font-size: 16px;
   letter-spacing: 0.72px;
   color: rgba(47, 47, 47, 0.5);
 }
 .order_input::-ms-input-placeholder {
+  font-family: "Regular";
   padding-left: -40px;
   font-size: 16px;
   letter-spacing: 0.72px;
   color: rgba(47, 47, 47, 0.5);
 }
 .order_input::placeholder {
+  font-family: "Regular";
   padding-left: -40px;
   font-size: 16px;
   letter-spacing: 0.72px;
