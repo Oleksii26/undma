@@ -170,11 +170,11 @@
         position: relative;
         height: 250px;
         overflow-x: scroll;
-        overflow-y: scroll;
+        // overflow-y: scroll;
         margin-bottom: 50px;
 
         @include bpoint(tablet) {
-            height: 380px;
+            height: 400px;
 
         }
 

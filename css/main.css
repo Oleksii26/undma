@@ -998,12 +998,11 @@ header svg:hover {
   position: relative;
   height: 250px;
   overflow-x: scroll;
-  overflow-y: scroll;
   margin-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_container {
-    height: 380px;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -1355,11 +1354,12 @@ header svg:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
+  padding-top: 60px;
+  text-align: center;
 }
 .reviews_title {
   color: var(--sacondary-cl-text);
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
   font-family: "Regular";
 }
@@ -1371,7 +1371,7 @@ header svg:hover {
 }
 .reviews_name {
   color: var(--sacondary-cl-text);
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Regular";
   letter-spacing: 1.08px;
   margin-bottom: 10px;
@@ -1383,6 +1383,33 @@ header svg:hover {
 }
 .reviews_position {
   font-family: "Regular";
+}
+.reviews_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.reviews_item {
+  max-width: 320px;
+  gap: 20px;
+}
+.reviews_play {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .order_title {
