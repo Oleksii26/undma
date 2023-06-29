@@ -719,9 +719,8 @@
             <h2 class="reviews_title title">Відео-відгуки</h2>
             <ul class="reviews_list">
                 <li class="reviews_item">
-                <li class="reviews_item">
                     <div style="position: relative;">
-                        <div onclick="openPopupVideo()" class="portfolio_link">
+                        <div onclick="openPopupVideo(0)" class="portfolio_link">
                             <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
                         </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
                     </div>
@@ -731,7 +730,7 @@
                 </li>
                 <li class="reviews_item">
                     <div style="position: relative;">
-                        <div onclick="openPopupVideo()" class="portfolio_link">
+                        <div onclick="openPopupVideo(1)" class="portfolio_link">
                             <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
                         </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
                     </div>
@@ -741,7 +740,7 @@
                 </li>
                 <li class="reviews_item">
                     <div style="position: relative;">
-                        <div onclick="openPopupVideo()" class="portfolio_link">
+                        <div onclick="openPopupVideo(2)" class="portfolio_link">
                             <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
                         </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
                     </div>
@@ -751,7 +750,7 @@
                 </li>
                 <li class="reviews_item">
                     <div style="position: relative;">
-                        <div onclick="openPopupVideo()" class="portfolio_link">
+                        <div onclick="openPopupVideo(3)" class="portfolio_link">
                             <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
                         </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
                     </div>
@@ -762,11 +761,25 @@
             </ul>
 
 
-            <div id="popupContainer" class="popup-container">
-                <span class="close-button" onclick="closePopupVideo()">&times;</span>
-                <video id="popupVideo" class="popup-video" controls autoplay>
+            <div id="popupContainer1" class="popup-container">
+                <video id="popupVideo1" class="popup-video" controls  >
+                    <source src="./img/svg/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="popupContainer2" class="popup-container">
+                <video id="popupVideo2" class="popup-video" controls  >
                     <source src="./img/svg/Teleport - Весна.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="popupContainer3" class="popup-container">
+                <video id="popupVideo3" class="popup-video" controls >
+                    <source src="./img/svg/LeavesFallinfg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="popupContainer4" class="popup-container">
+                <video id="popupVideo4" class="popup-video" controls  >
+                    <source src="./img/svg/byMySide.mp4" type="video/mp4">
                 </video>
             </div>
 
