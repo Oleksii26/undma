@@ -13,24 +13,13 @@ function changeImage(imageNumber) {
 
 
 
-    // Скрыть все изображения
-    // image1.classList.remove("hidden");
-    // image2.classList.add("hidden");
-   
-    // image1.style.display = "none";
-    // image2.style.display = "none";
-    // image3.style.display = "none";
-    // image4.style.display = "none";
-    // image5.style.display = "none";
 
-    // Показать выбранное изображение
     if (imageNumber === 1) {
         image1.classList.remove('hidden');
         image2.classList.add('hidden');
         image3.classList.add('hidden');
         image4.classList.add('hidden');
         image5.classList.add('hidden');
-        // image1.style.display = "flex";
         btn1.style.backgroundColor = '#157FE1';
         btn2.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';
@@ -43,7 +32,6 @@ function changeImage(imageNumber) {
         image3.classList.add('hidden');
         image4.classList.add('hidden');
         image5.classList.add('hidden');
-        // image2.style.display = "flex";
         btn2.style.backgroundColor = '#157FE1';
         btn1.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';

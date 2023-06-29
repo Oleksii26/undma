@@ -80,17 +80,19 @@
     }
 
     &_list-img {
-        position: absolute;
+
+        & li {
+            position: relative;
+        }
+
         display: flex;
-        // flex-wrap: wrap;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        right: -200%;
         justify-content: center;
         margin-bottom: 40px;
         gap: 30px;
         transition: 500ms linear;
-
+        text-align: left;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -140,18 +142,29 @@
     }
 
     &_link {
-        display: inline-block;
         position: absolute;
-        width: 300px;
-        height: 100%;
-        top: 0;
         left: 0;
+        top: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--hover-anim);
+
+        &:hover .portfolio_arrow {
+            opacity: 1;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
     }
 
-    &_link:hover {
 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    }
 
     &_container {
         position: relative;
@@ -159,9 +172,9 @@
         overflow-x: scroll;
         overflow-y: scroll;
         margin-bottom: 50px;
+
         @include bpoint(tablet) {
             height: 380px;
-            overflow: hidden;
 
         }
 
@@ -170,17 +183,20 @@
             overflow: hidden;
 
         }
+    }
 
+    &_arrow {
+        transition: var(--hover-anim);
+        opacity: 0;
     }
 }
 
+
 .hidden {
     opacity: 0;
-}
+    position: absolute;
+    transform: translateX(-50%);
 
-.trans {
-    right: 50%;
-    top: 0;
 }
 
 #imageContainer {

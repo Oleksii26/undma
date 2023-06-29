@@ -904,14 +904,11 @@ header svg:hover {
   }
 }
 .portfolio_list-img {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  right: -200%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -919,10 +916,14 @@ header svg:hover {
   gap: 30px;
   -webkit-transition: 500ms linear;
   transition: 500ms linear;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: 100%;
+}
+.portfolio_list-img li {
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_list-img {
@@ -969,16 +970,29 @@ header svg:hover {
   }
 }
 .portfolio_link {
-  display: inline-block;
   position: absolute;
-  width: 300px;
-  height: 100%;
-  top: 0;
   left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: var(--hover-anim);
+  transition: var(--hover-anim);
+}
+.portfolio_link:hover .portfolio_arrow {
+  opacity: 1;
 }
 .portfolio_link:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .portfolio_container {
   position: relative;
@@ -990,7 +1004,6 @@ header svg:hover {
 @media only screen and (min-width: 768px) {
   .portfolio_container {
     height: 380px;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -999,14 +1012,17 @@ header svg:hover {
     overflow: hidden;
   }
 }
-
-.hidden {
+.portfolio_arrow {
+  -webkit-transition: var(--hover-anim);
+  transition: var(--hover-anim);
   opacity: 0;
 }
 
-.trans {
-  right: 50%;
-  top: 0;
+.hidden {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #imageContainer {
