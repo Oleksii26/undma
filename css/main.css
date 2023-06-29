@@ -908,8 +908,6 @@ header svg:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -984,9 +982,10 @@ header svg:hover {
 }
 .portfolio_container {
   position: relative;
-  height: 450px;
-  border: 1px dashed red;
-  overflow: scroll;
+  height: 250px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_container {
@@ -996,7 +995,7 @@ header svg:hover {
 }
 @media only screen and (min-width: 1280px) {
   .portfolio_container {
-    height: 450px;
+    height: 500px;
     overflow: hidden;
   }
 }
@@ -1013,6 +1012,7 @@ header svg:hover {
 #imageContainer {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .cooperation {
