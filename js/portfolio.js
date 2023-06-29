@@ -12,30 +12,50 @@ function changeImage(imageNumber) {
     var btn5 = document.getElementById("btn5");
 
 
+
     // Скрыть все изображения
-    image1.style.display = "none";
-    image2.style.display = "none";
-    image3.style.display = "none";
-    image4.style.display = "none";
-    image5.style.display = "none";
+    // image1.classList.remove("hidden");
+    // image2.classList.add("hidden");
+   
+    // image1.style.display = "none";
+    // image2.style.display = "none";
+    // image3.style.display = "none";
+    // image4.style.display = "none";
+    // image5.style.display = "none";
 
     // Показать выбранное изображение
     if (imageNumber === 1) {
-        image1.style.display = "flex";
+        image1.classList.remove('hidden');
+        image2.classList.add('hidden');
+        image3.classList.add('hidden');
+        image4.classList.add('hidden');
+        image5.classList.add('hidden');
+        // image1.style.display = "flex";
         btn1.style.backgroundColor = '#157FE1';
         btn2.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn4.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn5.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     } else if (imageNumber === 2) {
-        image2.style.display = "flex";
+
+        image1.classList.add('hidden');
+        image2.classList.remove('hidden');
+        image3.classList.add('hidden');
+        image4.classList.add('hidden');
+        image5.classList.add('hidden');
+        // image2.style.display = "flex";
         btn2.style.backgroundColor = '#157FE1';
         btn1.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn4.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn5.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     } else if (imageNumber === 3) {
-        image3.style.display = "flex";
+        // image3.style.display = "flex";
+        image1.classList.add('hidden');
+        image3.classList.remove('hidden');
+        image2.classList.add('hidden');
+        image4.classList.add('hidden');
+        image5.classList.add('hidden');
         btn3.style.backgroundColor = '#157FE1';
         btn2.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn1.style.backgroundColor = 'rgba(0, 0, 0, 0)';
@@ -43,7 +63,12 @@ function changeImage(imageNumber) {
         btn5.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     }
     else if (imageNumber === 4) {
-        image4.style.display = "flex";
+        // image4.style.display = "flex";
+        image1.classList.add('hidden');
+        image4.classList.remove('hidden');
+        image3.classList.add('hidden');
+        image2.classList.add('hidden');
+        image5.classList.add('hidden');
         btn4.style.backgroundColor = '#157FE1';
         btn2.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';
@@ -51,7 +76,12 @@ function changeImage(imageNumber) {
         btn5.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 
     } else if (imageNumber === 5) {
-        image5.style.display = "flex";
+        // image5.style.display = "flex";
+        image1.classList.add('hidden');
+        image5.classList.remove('hidden');
+        image3.classList.add('hidden');
+        image4.classList.add('hidden');
+        image2.classList.add('hidden');
         btn5.style.backgroundColor = '#157FE1';
         btn2.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         btn3.style.backgroundColor = 'rgba(0, 0, 0, 0)';

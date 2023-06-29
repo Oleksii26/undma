@@ -860,7 +860,7 @@ header svg:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -904,26 +904,45 @@ header svg:hover {
   }
 }
 .portfolio_list-img {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px;
   gap: 30px;
+  -webkit-transition: 400ms linear;
+  transition: 400ms linear;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_list-img {
     margin-bottom: 87px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
+}
+.portfolio_list-img li {
+  width: 350px;
 }
 .portfolio_list-img-title {
   color: var(--white-cl);
   font-size: 23px;
   font-weight: "Bold";
   letter-spacing: 1.08px;
-  max-width: 300px;
+  max-width: 400px;
+  margin-top: 30px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio_list-img-title {
@@ -950,6 +969,45 @@ header svg:hover {
   .portfolio_list-img-text {
     font-size: 24px;
   }
+}
+.portfolio_link {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.portfolio_link:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.portfolio_container {
+  position: relative;
+  height: 450px;
+  border: 1px dashed red;
+  overflow: scroll;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio_container {
+    height: 380px;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .portfolio_container {
+    height: 450px;
+    overflow: hidden;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.trans {
+  right: 50%;
+  top: 0;
 }
 
 #imageContainer {

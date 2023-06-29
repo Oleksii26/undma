@@ -32,16 +32,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
 
         margin-bottom: 50px;
         align-items: center;
 
 
         @include bpoint(desktop) {
-        justify-content: center;
+            justify-content: center;
 
-            // justify-content: space-between;
         }
 
     }
@@ -64,10 +63,10 @@
         width: 300px;
 
 
-        
+
         &:hover {
             box-shadow: inset 17em 0 0 0 var(--btn-cl);
-           
+
         }
 
         &:active {
@@ -82,17 +81,30 @@
     }
 
     &_list-img {
+        position: absolute;
         display: flex;
+        flex-wrap: wrap;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         justify-content: center;
         margin-bottom: 40px;
         gap: 30px;
+        transition: 400ms linear;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
 
         @include bpoint(tablet) {
             margin-bottom: 87px;
-
-
+            flex-wrap: nowrap;
         }
 
+        & li {
+            width: 350px;
+        }
     }
 
     &_list-img-title {
@@ -100,7 +112,8 @@
         font-size: 23px;
         font-weight: 'Bold';
         letter-spacing: 1.08px;
-        max-width: 300px;
+        max-width: 400px;
+        margin-top: 30px;
 
 
         @include bpoint(tablet) {
@@ -127,6 +140,47 @@
         }
     }
 
+    &_link {
+        display: inline-block;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &_link:hover {
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+
+    &_container {
+        position: relative;
+        height: 450px;
+        border: 1px dashed red;
+        overflow: scroll;
+        @include bpoint(tablet) {
+            height: 380px;
+            overflow: hidden;
+
+        }
+
+        @include bpoint(desktop) {
+            height: 450px;
+            overflow: hidden;
+
+        }
+
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.trans {
+    right: 50%;
+    top: 0;
 }
 
 #imageContainer {
