@@ -13,11 +13,12 @@
     color: var(--sacondary-cl-text);
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Regular';
   }
 
   &_lang {
     color: var(--btn-cl);
-    font-weight: 500;
+    font-family: "Medium";
     margin-bottom: 10px;
     margin-top: 20px;
   }
@@ -25,7 +26,7 @@
   &_name {
     color: var(--sacondary-cl-text);
     font-size: 30px;
-    font-weight: 500;
+    font-family: "Regular";
     letter-spacing: 1.08px;
     margin-bottom: 10px;
 
@@ -35,88 +36,7 @@
     }
   }
 
-  .wrapper {
-    width: 100%;
-    // margin: 50px auto;
-    overflow: hidden;
-
-    @include bpoint(tablet) {
-      width: 400px;
-    }
-
-    @include bpoint(desktop) {
-      width: 1200px;
-    }
-  }
-
-
-  .slider-container {
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .slider-track {
-    display: flex;
-    transition: 0.2s;
-  }
-
-  .slider-item {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    @include bpoint(tablet) {
-      align-items: center;
-
-    }
-  }
-
-  .slider-buttons {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  button {
-    display: none;
-  }
-
-  label {
-    margin-right: 20px;
-
-    & svg {
-
-      fill: var(--btn-cl);
-      width: 50px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-
-      // @media (hover: hover) {
-      //   &:hover {
-      //     fill: red;
-      //   }
-
-      //   @media (hover: none) {
-      //     &:hover {
-      //       fill: none;
-      //     }
-
-      @include bpoint(tablet) {
-        &:hover {
-          fill: var(--btn-cl-hover);
-        }
-
-        &:active {
-          fill: var(--btn-cl-active);
-        }
-      }
-    }
-
-
+  &_position {
+    font-family: 'Regular';
   }
 }
