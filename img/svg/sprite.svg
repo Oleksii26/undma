@@ -22,6 +22,9 @@
       <path d="M12 21.6 6.4 16l-1.867 1.867L12 25.334l16-16-1.867-1.867L12 21.6z"/>
     </symbol>
 
+<symbol id="play3" viewBox="0 0 32 32">
+      <path d="m6 4 20 12L6 28z"/>
+    </symbol>
 
 <symbol id="close" viewBox="0 10 35 10">
 <path  stroke="#f9f9f9" style="stroke: var(--color3, #f9f9f9)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.641" d="M1.325 30.377l29.009-29.009"></path>
@@ -31,6 +34,10 @@
  
 <symbol id="_menu_24px" viewBox="0 0 20 32">
 <path d="M0 2.333v-5.333h48v5.333h-48zM48 18.667v-5.333h-48v2.333h48zM48 32v-5.333h-48v2.333h48z"></path>
+</symbol>
+
+<symbol id="icon-accordeon" fill='white' viewBox="0 0 21 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.9394" d="M0.97 0.97l17.939 15.515-17.939 14.061"></path>
 </symbol>
 
   </defs>

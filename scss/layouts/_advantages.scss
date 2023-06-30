@@ -68,14 +68,14 @@
         overflow: hidden;
         transition: all 0.3s linear;
         opacity: 0;
-
     }
 
-    .accordeon__descr--visible {
+    .accordeon__descr {
         opacity: 1;
     }
 
     &_item {
+        position: relative;
         border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     }
 
@@ -87,6 +87,16 @@
             font-size: 24px;
         }
 
+
     }
 
+    &_arrow {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s linear;
+    }
+
+  
 }

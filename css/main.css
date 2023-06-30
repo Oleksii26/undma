@@ -1252,10 +1252,11 @@ header svg:hover {
   transition: all 0.3s linear;
   opacity: 0;
 }
-.accordeon .accordeon__descr--visible {
+.accordeon .accordeon__descr {
   opacity: 1;
 }
 .accordeon_item {
+  position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 .accordeon_text {
@@ -1266,6 +1267,15 @@ header svg:hover {
   .accordeon_text {
     font-size: 24px;
   }
+}
+.accordeon_arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .reviews {
