@@ -32,7 +32,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-
         margin-bottom: 50px;
         align-items: center;
 
@@ -87,7 +86,7 @@
 
         display: flex;
         top: 0;
-        right: -300%;
+        right: 200%;
         justify-content: center;
         margin-bottom: 40px;
         gap: 30px;
@@ -96,7 +95,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        height: 100%;
+        height: 70%;
 
         @include bpoint(tablet) {
             margin-bottom: 87px;
@@ -110,7 +109,7 @@
 
     &_list-img-title {
         color: var(--white-cl);
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 'Bold';
         letter-spacing: 1.08px;
         max-width: 400px;
@@ -118,7 +117,7 @@
 
 
         @include bpoint(tablet) {
-            font-size: 29px;
+            font-size: 24px;
         }
 
         @include bpoint(desktop) {
@@ -164,17 +163,15 @@
 
     }
 
-
-
     &_container {
         position: relative;
         height: 250px;
         overflow-x: scroll;
-        // overflow-y: scroll;
+        overflow-y: scroll;
         margin-bottom: 50px;
 
         @include bpoint(tablet) {
-            height: 400px;
+            height: 300px;
 
         }
 
@@ -202,5 +199,5 @@
 #imageContainer {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
 }
+

@@ -1,72 +1,85 @@
-var popupContainers = document.querySelectorAll(".popup-container");
-var popupVideos = document.querySelectorAll(".popup-video");
-var body = document.body;
-var popupVideos = document.querySelectorAll(".popup-video");
-
-
-function openPopupVideo(index) {
-  popupContainers[index].style.display = "block";
-  popupVideos[index].play();
-  body.style.overflow = "hidden";
+// Загрузка YouTube IFrame API
+function loadYouTubePlayerAPI() {
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
-function closePopupVideo(index) {
-  popupContainers[index].style.display = "none";
-  popupVideos[index].pause();
-  popupVideos[index].currentTime = 0;
-  body.style.overflow = "auto";
-}
+loadYouTubePlayerAPI();
 
-function handleKeyDown(event, index) {
-  if (event.key === "Escape") {
-    closePopupVideo(index);
-  }
-}
-
-function handleContainerClick(event, index) {
-  if (event.target === popupContainers[index]) {
-    closePopupVideo(index);
-  }
-}
-
-popupContainers.forEach(function(container, index) {
-  container.addEventListener("click", function(event) {
-    handleContainerClick(event, index);
-  });
-});
-
-document.addEventListener("keydown", function(event) {
-  popupContainers.forEach(function(container, index) {
-    if (container.style.display === "block") {
-      handleKeyDown(event, index);
+// Создание плееров при загрузке API
+var players = {};
+function onYouTubeIframeAPIReady() {
+  players['player1'] = new YT.Player('player1', {
+    height: '360',
+    width: '640',
+    videoId: 'ib805EAN60A',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
     }
   });
-});
 
-window.addEventListener("beforeunload", function() {
-  popupVideos.forEach(function(video) {
-    video.pause();
-    video.currentTime = 0;
+  players['player2'] = new YT.Player('player2', {
+    height: '360',
+    width: '640',
+    videoId: 'wCPKbtsPZ1Q',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
   });
-});
 
-var homepageLink = document.getElementById("index.html");
-homepageLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  if (isAutoplayEnabled()) {
-    pauseAllVideos();
-  }
-  window.location.href = homepageLink.href;
-});
-
-function isAutoplayEnabled() {
-  return popupVideos.some(function(video) {
-    return video.autoplay;
+  players['player3'] = new YT.Player('player3', {
+    height: '360',
+    width: '640',
+    videoId: 'AnXTe6VLns0',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+  players['player4'] = new YT.Player('player4', {
+    height: '360',
+    width: '640',
+    videoId: 'VhQkJdqFD2s',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
   });
 }
 
-function pauseAllVideos() {
-  popupVideos.forEach(function(video) {
-    video.pause();
+// Код, который выполняется после создания плееров
+function onPlayerReady(event) {
+  // Воспроизведение видео при готовности плеера
+  event.target.mute();
+}
+
+// Код, который выполняется при изменении состояния плеера
+function onPlayerStateChange(event) {
+  // Вы можете добавить дополнительные действия в соответствии с состоянием плеера
+  // Например, обновление интерфейса, обработка событий остановки или завершения видео и т. д.
+}
+
+// Обработчик события нажатия на ссылку
+var links = document.getElementsByClassName('video-link');
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    var videoId = this.getAttribute('data-video');
+    var videoContainer = document.getElementById(videoId);
+    var player = players[videoId];
+
+    if (videoContainer && player) {
+      if (videoContainer.style.display === 'none') {
+        videoContainer.style.display = 'block';
+        player.playVideo();
+      } else {
+        videoContainer.style.display = 'none';
+        player.pauseVideo(); // Добавлено: остановка воспроизведения видео
+      }
+    }
   });
 }

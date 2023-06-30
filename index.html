@@ -14,6 +14,7 @@
 
 </head>
 
+
 <body>
 
     <header id="header">
@@ -54,8 +55,8 @@
             <p class="hero_text">*я Ваш дом труба шатал. Мені так мама сказала</p>
             <h4 class="hero_tagline">Найкраща реалізація твоїх ідей!</h4>
             <div class="hero_btn-container">
-                <button type="button" class="btn">отримати оцінку проєкту</button>
-                <button type="button" class="hero_btn">отримати консультацію</button>
+                <a href="#order" class="btn">отримати оцінку проєкту</button>
+                    <a href="./contacts.html#order" class="hero_btn">отримати консультацію</a>
             </div>
         </section>
         <section id="work" class="work section">
@@ -322,7 +323,8 @@
 
                 </div>
             </div>
-            <button type="button" class="btn super-btn">дивись більше на behance</button>
+            <a href="https://www.behance.net/vsololive" class="btn super-btn" target="_blank">дивись більше на
+                behance</a>
         </section>
         <section class="cooperation section">
             <h4 class="cooperation_title">Схеми співробітництва</h4>
@@ -719,88 +721,70 @@
             <h2 class="reviews_title title">Відео-відгуки</h2>
             <ul class="reviews_list">
                 <li class="reviews_item">
-                    <div style="position: relative;">
-                        <div onclick="openPopupVideo(0)" class="portfolio_link">
-                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
-                        </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
+                    <div class="reviews_container">
+                        <a href="#" data-video="player1" class="portfolio_link video-link">
+                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play"></a>
+                        <img class="reviews_img" src="./img/reviews/img_berstein.jpg" alt="Alex Berstein">
                     </div>
                     <p class="reviews_lang">ENG</p>
-                    <p class="reviews_name">Khaled Belfas</p>
-                    <p class="reviews_position">Founder kb.estate</p>
+                    <p class="reviews_name">Alex Berstein</p>
+                    <p class="reviews_position">Head of Compliance at pink.gg</p>
                 </li>
                 <li class="reviews_item">
-                    <div style="position: relative;">
-                        <div onclick="openPopupVideo(1)" class="portfolio_link">
-                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
-                        </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
+                    <div class="reviews_container">
+                        <a href="#" data-video="player2" class="portfolio_link video-link">
+                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play"></a>
+                        <img class="reviews_img" src="./img/reviews/img_suprun.jpg" alt="Maxim Suprun">
                     </div>
-                    <p class="reviews_lang">ENG</p>
-                    <p class="reviews_name">Khaled Belfas</p>
-                    <p class="reviews_position">Founder kb.estate</p>
+                    <p class="reviews_lang">RU</p>
+                    <p class="reviews_name">Maxim Suprun</p>
+                    <p class="reviews_position">Psychologist, Gakrus founder</p>
                 </li>
                 <li class="reviews_item">
-                    <div style="position: relative;">
-                        <div onclick="openPopupVideo(2)" class="portfolio_link">
-                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
-                        </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
+                    <div class="reviews_container">
+                        <a href="#" data-video="player3" class="portfolio_link video-link">
+                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play"></a>
+                        <img class="reviews_img" src="./img/reviews/img_davydova.jpg" alt="Natalya Davydova">
                     </div>
-                    <p class="reviews_lang">ENG</p>
-                    <p class="reviews_name">Khaled Belfas</p>
-                    <p class="reviews_position">Founder kb.estate</p>
+                    <p class="reviews_lang">RU</p>
+                    <p class="reviews_name">Natalya Davydova</p>
+                    <p class="reviews_position"> Photographer, Videographer</p>
                 </li>
                 <li class="reviews_item">
-                    <div style="position: relative;">
-                        <div onclick="openPopupVideo(3)" class="portfolio_link">
-                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play">
-                        </div><img class="reviews_img" src="./img/reviev.jpg" alt="reviews">
+                    <div class="reviews_container">
+                        <a href="#" data-video="player4" class="portfolio_link video-link">
+                            <img class="portfolio_arrow" src="./img/svg/play.svg" alt="play"></a>
+                        <img class="reviews_img" src="./img/reviews/img_cudnova.jpg" alt="Svitlana Chudnova">
                     </div>
-                    <p class="reviews_lang">ENG</p>
-                    <p class="reviews_name">Khaled Belfas</p>
-                    <p class="reviews_position">Founder kb.estate</p>
+                    <p class="reviews_lang">EN</p>
+                    <p class="reviews_name">Svitlana Chudnova</p>
+                    <p class="reviews_position"> Co-founder hotel "ZORNICKA"</p>
                 </li>
+
             </ul>
 
-
-            <div id="popupContainer1" class="popup-container">
-                <video id="popupVideo1" class="popup-video" controls  >
-                    <source src="./img/svg/videoplayback.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div id="popupContainer2" class="popup-container">
-                <video id="popupVideo2" class="popup-video" controls  >
-                    <source src="./img/svg/Teleport - Весна.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div id="popupContainer3" class="popup-container">
-                <video id="popupVideo3" class="popup-video" controls >
-                    <source src="./img/svg/LeavesFallinfg.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div id="popupContainer4" class="popup-container">
-                <video id="popupVideo4" class="popup-video" controls  >
-                    <source src="./img/svg/byMySide.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <a href="#" class="btn reviews_button super-btn">дивитись усі відгуки</a>
+            <div id="player1" class="video-container"></div>
+            <div id="player2" class="video-container"></div>
+            <div id="player3" class="video-container"></div>
+            <div id="player4" class="video-container"></div>
+            <a href="https://reviews.vsolo.live/" class="btn reviews_button super-btn">дивитись усі відгуки</a>
         </section>
 
-        <section class="order section">
+        <section id="order" class="order section">
             <h2 class="order_title title">Ви готові до співпраці?</h2>
             <h4 class="order_sub-title">Заповніть форму нижче, щоб отримати прорахунок робіт!</h4>
             <form class="order_form">
                 <label for="" class="order_lable">
                     Ім'я
-                    <input class="order_input" type="text" placeholder="Ім'я">
+                    <input class="order_input" name="nomo" type="text" placeholder="Ім'я">
                 </label>
                 <label for="" class="order_lable">
                     Телефон<span class="order_star">*</span>
-                    <input class="order_input" type="text" placeholder="+380 (000) 000 00 00">
+                    <input class="order_input" name="telefono" type="text" placeholder="+380 (000) 000 00 00">
                 </label>
                 <label for="" class="order_lable">
                     E-mail
-                    <input class="order_input" type="text" placeholder="example@example.com">
+                    <input class="order_input" name="posto" type="text" placeholder="example@example.com">
                 </label>
                 <div class="order_sub-container">
 
@@ -819,7 +803,28 @@
                     </div>
                 </div>
 
+
                 <button type="button" class="btn order_button super-btn">Надіслати</button>
+                <!-- AntiSpam -->
+                <div style="display: none;">
+                    <input type="text" name="name" value="" placeholder="&nbsp;">
+                    <input type="text" name="number" value="" placeholder="&nbsp;">
+                    <input type="text" name="tel" value="" placeholder="&nbsp;">
+                    <input type="email" name="email" value="" placeholder="&nbsp;">
+                </div>
+
+                <div style="visibility: hidden; height: 0px;">
+                    <input type="text" name="surname" value="" placeholder="&nbsp;">
+                    <input type="text" name="telephone" value="" placeholder="&nbsp;">
+                    <input type="email" name="mail" value="" placeholder="&nbsp;">
+                </div>
+
+                <div style="position: absolute; top: 0px; left: -4000px;">
+                    <input type="text" name="nickname" value="" placeholder="&nbsp;">
+                    <input type="text" name="phone" value="" placeholder="&nbsp;">
+                    <input type="email" name="e-mail" value="" placeholder="&nbsp;">
+                </div>
+                <!-- AntiSpam -->
             </form>
             <div class="up">
                 <div class="file-upload">
