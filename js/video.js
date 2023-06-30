@@ -54,7 +54,7 @@ function onYouTubeIframeAPIReady() {
 // Код, который выполняется после создания плееров
 function onPlayerReady(event) {
   // Воспроизведение видео при готовности плеера
-  event.target.mute();
+  // event.target.mute();
 }
 
 // Код, который выполняется при изменении состояния плеера
@@ -62,6 +62,8 @@ function onPlayerStateChange(event) {
   // Вы можете добавить дополнительные действия в соответствии с состоянием плеера
   // Например, обновление интерфейса, обработка событий остановки или завершения видео и т. д.
 }
+
+
 
 // Обработчик события нажатия на ссылку
 var links = document.getElementsByClassName('video-link');
@@ -83,3 +85,11 @@ for (var i = 0; i < links.length; i++) {
     }
   });
 }
+
+
+
+
+
+
+
+

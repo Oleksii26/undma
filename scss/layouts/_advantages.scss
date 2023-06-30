@@ -13,153 +13,80 @@
 
     &_text {
         text-align: center;
-        font-size: 19px;
+        font-size: 16px;
         letter-spacing: 1.08px;
         margin-bottom: 30px;
         font-weight: "Medium";
+        padding-bottom: 20px;
 
         @include bpoint(tablet) {
-            font-size: 24px;
+            font-size: 20px;
         }
 
         @include bpoint(desktop) {
             font-size: 30px;
         }
     }
-
-    &_item {
-
-        &:not(:last-child) {
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-
-        }
-    }
-
 }
 
 .accordeon {
-    font-family: 'Medium';
-    font-size: 20px;
 
-    &.is-active {
-        .accordeon__content {
-            padding: 0 22px;
-            height: auto;
-
-
-            padding: 0 22px;
-
-        }
-
-        .accordeon__header {
-            .accordeon__toggle {
-                transform: rotate(45deg);
-
-            }
-
-            &:hover {
-                .accordeon__toggle {
-                    transform: rotate(60deg);
-                }
-            }
-        }
-    }
-
-    & p {
-        font-size: 14px;
+    .accordeon__title {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 'Bold';
+        line-height: normal;
+        letter-spacing: 1.08px;
+        margin: 0;
+        padding: 0 10px;
+        cursor: pointer;
+        margin-bottom: 16px;
+        padding-bottom: 26px;
+        margin-top: 32px;
 
         @include bpoint(tablet) {
-            font-size: 18px;
+            margin-bottom: 16px;
+            padding-bottom: 25px;
+            margin-top: 40px;
+            font-size: 28px;
+
         }
 
         @include bpoint(desktop) {
+            margin-bottom: 20px;
+            padding-bottom: 30px;
+            margin-top: 50px;
+            font-size: 36px;
+
+        }
+    }
+
+
+
+    .accordeon__descr {
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        opacity: 0;
+
+    }
+
+    .accordeon__descr--visible {
+        opacity: 1;
+    }
+
+    &_item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    &_text {
+        font-size: 18px;
+        padding-bottom: 50px;
+
+        @include bpoint(tablet) {
             font-size: 24px;
         }
-    }
-
-}
-
-.accordeon__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding-top: 30px;
-    padding-bottom: 10px;
-
-    @include bpoint(tablet) {
-        padding-top: 40px;
-        padding-bottom: 15px;
-    }
-
-    @include bpoint(desktop) {
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-
-
-    &:hover {
-        .accordeon__title {
-            transform: translateX(4px);
-        }
-
-        .accordeon__toggle {
-            transform: rotate(14deg);
-        }
-    }
-}
-
-.accordeon__title {
-    transition: .3s ease transform;
-    font-size: 20px;
-    letter-spacing: 1.08px;
-
-    @include bpoint(tablet) {
-        font-size: 28px;
-    }
-
-    @include bpoint(desktop) {
-        font-size: 36px;
-    }
-
-}
-
-.accordeon__toggle {
-    display: flex;
-    align-items: center;
-    transition: .3s ease transform;
-    cursor: pointer;
-
-    :nth-child(1) {
-        height: 2px;
-        background-color: white;
-
-
-        width: 33px;
 
     }
 
-    :nth-child(2) {
-        width: 2px;
-
-        background-color: white;
-
-        transform: translate(-17px, 0);
-        height: 33px;
-    }
-}
-
-.accordeon__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: .2s ease all;
-
-    & p {
-        font-family: 'Light';
-    }
-}
-
-.arrow {
-    cursor: pointer;
 }
